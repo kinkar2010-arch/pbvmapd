@@ -93,7 +93,7 @@
   </aside>
 
   <!-- Main Institutional Header -->
-  <header class="bg-gradient-to-r from-pbvm-darkblue via-pbvm-blue to-[#084298] text-white shadow-xl border-b-4 border-amber-400 sticky top-0 z-40">
+  <header class="bg-gradient-to-r from-pbvm-darkblue via-pbvm-blue to-[#084298] text-white shadow-xl border-b-4 border-amber-400 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-3 sm:py-3.5 flex flex-col lg:flex-row items-center justify-between gap-4">
       
       <!-- Emblem & Title -->
@@ -119,16 +119,12 @@
         </div>
       </div>
 
-      <!-- Navigation Bar with Notification Menu & PDF Buttons -->
+      <!-- Navigation Bar -->
       <nav aria-label="Portal Navigation" class="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 text-xs font-bengali">
-        
-        <!-- Active Home Tab -->
         <a href="index.html" class="px-3 py-2 bg-white text-pbvm-darkblue font-extrabold rounded-xl shadow-md transition flex items-center gap-1.5 ring-2 ring-amber-400">
           <i data-lucide="home" class="w-3.5 h-3.5 text-pbvm-blue"></i>
           <span>মূল পাতা (Home)</span>
         </a>
-
-        <!-- Section Anchors -->
         <a href="#about" class="px-2.5 py-2 text-blue-100 hover:text-white hover:bg-white/10 rounded-xl transition font-semibold">
           পরিচিতি
         </a>
@@ -179,7 +175,6 @@
           <i data-lucide="ticket" class="w-4 h-4 text-slate-950"></i>
           <span>অ্যাডমিট ২০২৬</span>
         </a>
-
       </nav>
     </div>
   </header>
@@ -253,7 +248,6 @@
           </div>
           <div class="flex items-center justify-between py-1">
             <span class="text-slate-400">মোট অংশগ্রহণকারী:</span>
-            <!-- Dynamically populated candidate counter -->
             <span id="liveCandidateCount" class="font-bold text-emerald-400 font-mono text-sm flex items-center gap-1">
               <i data-lucide="refresh-cw" class="w-3.5 h-3.5 animate-spin text-amber-400"></i> লোড হচ্ছে...
             </span>
@@ -492,7 +486,7 @@
       </div>
     </section>
 
-    <!-- Highlights & 7-Photo Gallery Section -->
+    <!-- Highlights & 8-Photo Gallery Section (Includes 7.jpeg) -->
     <section id="highlights" class="bg-white rounded-2xl shadow-official border border-slate-200 p-6 sm:p-8">
       <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-slate-200 gap-2">
         <div>
@@ -504,14 +498,25 @@
             সেমিনার, বিজ্ঞান আলোচনা সভা, পুরস্কার বিতরণ ও উদ্বোধনী সমবেত সংগীতের নির্বাচিত মুহূর্ত
           </p>
         </div>
-        <span class="text-xs font-semibold text-slate-400 bg-slate-100 px-3 py-1 rounded-full">ফটো গ্যালারি (৭টি আলোকচিত্র)</span>
+        <span class="text-xs font-semibold text-slate-400 bg-slate-100 px-3 py-1 rounded-full">ফটো গ্যালারি (৮টি আলোকচিত্র)</span>
       </div>
 
-      <!-- Responsive Grid for 7 Photos -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-6">
+      <!-- Responsive Grid for 8 Photos -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
         
-        <!-- Photo 0: 1.jpeg -->
+        <!-- Photo 0: 7.jpeg (NEW) -->
         <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(0)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="7.jpeg" alt="Award presentation to student" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1 font-bengali">মঞ্চে কৃতি ছাত্রকে শংসাপত্র ও ট্রফি প্রদান</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Awarding certificate and medal at Anima Debi Mancha[cite: 4]</p>
+          </div>
+        </div>
+
+        <!-- Photo 1: 1.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(1)">
           <div class="aspect-[4/3] overflow-hidden">
             <img src="1.jpeg" alt="Prize presentation" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           </div>
@@ -521,8 +526,8 @@
           </div>
         </div>
 
-        <!-- Photo 1: 3.jpeg -->
-        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(1)">
+        <!-- Photo 2: 3.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(2)">
           <div class="aspect-[4/3] overflow-hidden">
             <img src="3.jpeg" alt="Merit award" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           </div>
@@ -532,8 +537,8 @@
           </div>
         </div>
 
-        <!-- Photo 2: 4.jpeg -->
-        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(2)">
+        <!-- Photo 3: 4.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(3)">
           <div class="aspect-[4/3] overflow-hidden">
             <img src="4.jpeg" alt="Stage ceremony" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           </div>
@@ -543,8 +548,8 @@
           </div>
         </div>
 
-        <!-- Photo 3: 2.jpeg -->
-        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(3)">
+        <!-- Photo 4: 2.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(4)">
           <div class="aspect-[4/3] overflow-hidden">
             <img src="2.jpeg" onerror="this.onerror=null; this.src='2_3.jpeg';" alt="Keynote Address" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           </div>
@@ -554,8 +559,8 @@
           </div>
         </div>
 
-        <!-- Photo 4: 5.jpeg -->
-        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(4)">
+        <!-- Photo 5: 5.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(5)">
           <div class="aspect-[4/3] overflow-hidden">
             <img src="5.jpeg" onerror="this.onerror=null; this.src='5_3.jpeg';" alt="Interaction" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           </div>
@@ -565,8 +570,8 @@
           </div>
         </div>
 
-        <!-- Photo 5: 6.jpeg -->
-        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(5)">
+        <!-- Photo 6: 6.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(6)">
           <div class="aspect-[4/3] overflow-hidden">
             <img src="6.jpeg" onerror="this.onerror=null; this.src='6_3.jpeg';" alt="Prize Winners" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           </div>
@@ -576,8 +581,8 @@
           </div>
         </div>
 
-        <!-- Photo 6: 9.jpeg -->
-        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(6)">
+        <!-- Photo 7: 9.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(7)">
           <div class="aspect-[4/3] overflow-hidden">
             <img src="9.jpeg" onerror="this.onerror=null; this.src='9_2.jpeg';" alt="Anthem" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
           </div>
@@ -734,12 +739,29 @@
 
     // Official Notifications Array: Add, edit, or remove notifications here
     const NOTIFICATIONS = [
-     
       {
         sl: 1,
-        date: '2026-05-05',
-        title: 'Vigyan Avikisha 2026 Examination Notification',
-        pdfUrl: 'notices1.pdf'
+        date: '2026-09-15',
+        title: 'বিজ্ঞান অভীক্ষা ২০২৬-এর পরীক্ষা সূচি ও কেন্দ্র বণ্টন সংক্রান্ত নির্দেশিকা',
+        pdfUrl: 'notices/exam_routine_2026.pdf'
+      },
+      {
+        sl: 2,
+        date: '2026-09-01',
+        title: 'বিজ্ঞান অভীক্ষা ২০২৬ পাঠ্যক্রম ও নম্বর বিভাজন (Official Syllabus)',
+        pdfUrl: 'syllabus.pdf'
+      },
+      {
+        sl: 3,
+        date: '2026-08-10',
+        title: 'বিদ্যালয়ভিত্তিক অংশগ্রহণকারী পরীক্ষার্থীদের নাম নথিভুক্তিকরণ সার্কুলার',
+        pdfUrl: 'notices/registration_circular.pdf'
+      },
+      {
+        sl: 4,
+        date: '2025-11-20',
+        title: 'বিজ্ঞান অভীক্ষা ২০২৫ জেলাভিত্তিক মেধাতালিকা ও শংসাপত্র বিতরণ বিজ্ঞপ্তি',
+        pdfUrl: 'notices/merit_list_2025.pdf'
       }
     ];
 
@@ -867,7 +889,9 @@
       document.body.appendChild(script);
     }
 
+    // Photo Gallery Lightbox Configuration (Includes 7.jpeg)
     const GALLERY_ITEMS = [
+      { src: '7.jpeg', fallback: '7.jpeg', title: 'মঞ্চে কৃতি ছাত্রকে শংসাপত্র ও ট্রফি প্রদান', sub: 'Awarding certificate and medal at Anima Debi Mancha[cite: 4]' },
       { src: '1.jpeg', fallback: '1.jpeg', title: 'কৃতি ছাত্রীকে শংসাপত্র ও ট্রফি প্রদান', sub: 'Award presentation at Alipurduar Newtown Girls\' High School[cite: 1]' },
       { src: '3.jpeg', fallback: '3.jpeg', title: 'বিজ্ঞান অভীক্ষায় কৃতি শিক্ষার্থীর সম্মাননা', sub: 'Honouring young scientific talent with trophy & citation[cite: 2]' },
       { src: '4.jpeg', fallback: '4.jpeg', title: 'মঞ্চে বিজ্ঞান ও মেধা সম্মাননা', sub: 'Conferring prize to meritorious participant on stage[cite: 3]' },
