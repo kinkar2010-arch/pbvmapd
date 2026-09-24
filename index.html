@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ | আলিপুরদুয়ার জেলা কমিটি — Official Portal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pbvm: {
+              blue: '#002b7f',
+              darkblue: '#001a4e',
+              deepnavy: '#061330',
+              red: '#be123c',
+              gold: '#d97706',
+              surface: '#f8fafc'
+            }
+          },
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            bengali: ['Noto Serif Bengali', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          },
+          boxShadow: {
+            'official': '0 4px 20px -2px rgba(0, 26, 78, 0.12), 0 2px 6px -1px rgba(0, 26, 78, 0.07)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .official-bg-grid {
+      background-color: #001a4e;
+      background-image: 
+        linear-gradient(rgba(217, 119, 6, 0.12) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(217, 119, 6, 0.12) 1px, transparent 1px);
+      background-size: 36px 36px;
+    }
+    .watermark-emblem {
+      background-image: url('pvbm logo_3.jpeg'), url('pvbm logo.jpeg');
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: 320px;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col selection:bg-amber-400 selection:text-slate-950">
+
+  <!-- Top Institutional Utility Strip with Notifications & Direct Links -->
+  <aside aria-label="Official Notice Strip" class="bg-slate-950 text-slate-200 text-xs border-b border-slate-800 py-1.5 px-4 font-medium tracking-wide">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 text-[11px] sm:text-xs">
+        <span class="inline-flex items-center gap-1 bg-amber-500 text-slate-950 px-2 py-0.5 rounded font-extrabold uppercase tracking-wider text-[10px]">
+          <i data-lucide="shield-alert" class="w-3 h-3"></i> বিজ্ঞপ্তি
+        </span>
+        <span class="font-bengali text-slate-300">
+          বিজ্ঞান অভীক্ষা ২০২৬ সিলেবাস, অফিসিয়াল বিজ্ঞপ্তি ও ফলাফল সংগ্রহশালা সক্রিয়।
+        </span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-3 text-[11px] font-bengali">
+        <button onclick="openNotificationModal()" class="hover:text-amber-300 text-amber-400 font-bold transition flex items-center gap-1">
+          <i data-lucide="bell" class="w-3 h-3 text-amber-400"></i> সকল বিজ্ঞপ্তি তালিকা
+        </button>
+        <span class="text-slate-700">|</span>
+        <a href="syllabus.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 text-slate-300 transition flex items-center gap-1">
+          <i data-lucide="file-down" class="w-3 h-3 text-amber-400"></i> সিলেবাস (PDF)
+        </a>
+        <span class="text-slate-700">|</span>
+        <a href="admit.html" class="hover:text-amber-400 text-slate-300 font-bold transition flex items-center gap-1">
+          <i data-lucide="ticket" class="w-3 h-3 text-amber-300"></i> অ্যাডমিট ২০২৬
+        </a>
+        <span class="text-slate-700">|</span>
+        <a href="result 2025.html" class="hover:text-emerald-400 text-slate-300 transition flex items-center gap-1">
+          <i data-lucide="award" class="w-3 h-3 text-emerald-400"></i> রেজাল্ট ২০২৫
+        </a>
+        <span class="text-slate-700">|</span>
+        <a href="result 2024.html" class="hover:text-blue-400 text-slate-300 transition flex items-center gap-1">
+          <i data-lucide="history" class="w-3 h-3 text-blue-400"></i> রেজাল্ট ২০২৪
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Institutional Header -->
+  <header class="bg-gradient-to-r from-pbvm-darkblue via-pbvm-blue to-[#084298] text-white shadow-xl border-b-4 border-amber-400 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 sm:py-3.5 flex flex-col lg:flex-row items-center justify-between gap-4">
+      
+      <!-- Emblem & Title -->
+      <div class="flex items-center gap-4 text-center sm:text-left">
+        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full p-1 shadow-2xl ring-4 ring-amber-400/90 flex-shrink-0 flex items-center justify-center overflow-hidden">
+          <img 
+            src="pvbm logo_3.jpeg" 
+            onerror="this.onerror=null; this.src='pvbm logo.jpeg'; this.onerror=function(){this.src='pvbm logo_2.jpeg';};" 
+            alt="Paschim Banga Vigyan Mancha Official Emblem" 
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <div>
+          <div class="font-bengali text-amber-300 text-base sm:text-lg lg:text-xl font-bold tracking-wide flex items-center justify-center sm:justify-start gap-2">
+            <span>পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ — আলিপুরদুয়ার জেলা কমিটি</span>
+          </div>
+          <h1 class="font-cinzel text-lg sm:text-2xl font-black tracking-wider uppercase text-white drop-shadow-md">
+            Paschim Banga Vigyan Mancha
+          </h1>
+          <p class="text-[11px] sm:text-xs font-semibold tracking-wider text-blue-200 uppercase">
+            Alipurduar District Committee • Science Popularization & Rational Thought Movement
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav aria-label="Portal Navigation" class="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 text-xs font-bengali">
+        <a href="index.html" class="px-3 py-2 bg-white text-pbvm-darkblue font-extrabold rounded-xl shadow-md transition flex items-center gap-1.5 ring-2 ring-amber-400">
+          <i data-lucide="home" class="w-3.5 h-3.5 text-pbvm-blue"></i>
+          <span>মূল পাতা (Home)</span>
+        </a>
+        <a href="#about" class="px-2.5 py-2 text-blue-100 hover:text-white hover:bg-white/10 rounded-xl transition font-semibold">
+          পরিচিতি
+        </a>
+        <a href="#newsletters" class="px-2.5 py-2 text-blue-100 hover:text-white hover:bg-white/10 rounded-xl transition font-semibold">
+          প্রকাশনা
+        </a>
+        <a href="#highlights" class="px-2.5 py-2 text-blue-100 hover:text-white hover:bg-white/10 rounded-xl transition font-semibold">
+          চিত্রশালা
+        </a>
+
+        <!-- NOTIFICATION MENU BUTTON -->
+        <button 
+          type="button"
+          onclick="openNotificationModal()" 
+          class="px-3 py-2 bg-amber-500/20 hover:bg-amber-400 text-amber-200 hover:text-slate-950 font-bold rounded-xl border border-amber-400/40 shadow transition flex items-center gap-1.5"
+          title="View Official Circulars and Notifications List"
+        >
+          <i data-lucide="bell-ring" class="w-3.5 h-3.5 text-amber-300"></i>
+          <span>বিজ্ঞপ্তি (Notices)</span>
+        </button>
+
+        <!-- EXAM SYLLABUS MENU (OPENS PDF) -->
+        <a 
+          href="syllabus.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="px-3 py-2 bg-rose-700/90 hover:bg-rose-600 text-white font-bold rounded-xl border border-rose-300/40 shadow transition flex items-center gap-1.5"
+          title="Download & View Vigyan Aviksha Examination Syllabus PDF"
+        >
+          <i data-lucide="book-open-check" class="w-3.5 h-3.5 text-amber-300"></i>
+          <span>সিলেবাস (PDF)</span>
+        </a>
+
+        <!-- 2024 Results Tab -->
+        <a href="result 2024.html" class="px-3 py-2 bg-blue-900/90 hover:bg-blue-800 text-blue-100 hover:text-white font-bold rounded-xl border border-blue-400/40 shadow transition flex items-center gap-1.5">
+          <i data-lucide="history" class="w-3.5 h-3.5 text-blue-300"></i>
+          <span>রেজাল্ট ২০২৪</span>
+        </a>
+
+        <!-- 2025 Results Tab -->
+        <a href="result 2025.html" class="px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl shadow transition flex items-center gap-1.5">
+          <i data-lucide="award" class="w-3.5 h-3.5 text-amber-300"></i>
+          <span>রেজাল্ট ২০২৫</span>
+        </a>
+
+        <!-- 2026 Admit Card Tab -->
+        <a href="admit.html" class="px-3.5 py-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black rounded-xl shadow-lg transition flex items-center gap-1.5 ring-1 ring-amber-500">
+          <i data-lucide="ticket" class="w-4 h-4 text-slate-950"></i>
+          <span>অ্যাডমিট ২০২৬</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="official-bg-grid text-white py-12 lg:py-16 px-4 relative overflow-hidden border-b-4 border-amber-500/80">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+      
+      <!-- Narrative -->
+      <div class="lg:col-span-8 space-y-4 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 bg-amber-400/20 text-amber-300 border border-amber-400/40 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> আমাদের চল্লিশ বছর — বিজ্ঞান অভিযান ২০২৬
+        </div>
+        
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bengali font-bold leading-tight text-white drop-shadow-lg">
+          যুক্তিবাদী মনন ও বিজ্ঞান চেতনা বিকাশে নিরবচ্ছিন্ন চার দশক
+        </h2>
+        
+        <p class="text-sm sm:text-base text-slate-300 font-bengali leading-relaxed max-w-2xl">
+          পশ্চিমবঙ্গ বিজ্ঞান মঞ্চের আলিপুরদুয়ার জেলা কমিটি স্কুল-কলেজের শিক্ষার্থী ও সাধারণ মানুষের মধ্যে বিজ্ঞান চেতনা বিস্তার, কুসংস্কার নির্মূল, এবং কুসংস্কারমুক্ত বৈজ্ঞানিক দৃষ্টিভঙ্গি গড়ে তুলতে নিরবচ্ছিন্নভাবে কাজ করে চলেছে।
+        </p>
+
+        <!-- Official Portal Fast Access Buttons -->
+        <div class="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-3">
+          <a href="admit.html" class="px-4 py-3 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs sm:text-sm rounded-xl shadow-xl transition flex items-center gap-2 font-bengali">
+            <i data-lucide="ticket" class="w-4 h-4"></i> বিজ্ঞান অভীক্ষা ২০২৬ অ্যাডমিট পোর্টাল
+          </a>
+
+          <button onclick="openNotificationModal()" class="px-4 py-3 bg-blue-800/90 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm rounded-xl shadow-xl transition flex items-center gap-2 font-bengali border border-blue-400/40">
+            <i data-lucide="bell" class="w-4 h-4 text-amber-300"></i> অফিশিয়াল বিজ্ঞপ্তি তালিকা
+          </button>
+          
+          <a href="syllabus.pdf" target="_blank" rel="noopener noreferrer" class="px-4 py-3 bg-rose-700 hover:bg-rose-600 text-white font-bold text-xs sm:text-sm rounded-xl shadow-xl transition flex items-center gap-2 font-bengali border border-rose-400/40">
+            <i data-lucide="file-text" class="w-4 h-4 text-amber-300"></i> পূর্ণাঙ্গ সিলেবাস (PDF)
+          </a>
+
+          <a href="result 2025.html" class="px-4 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm rounded-xl shadow-xl transition flex items-center gap-2 font-bengali">
+            <i data-lucide="award" class="w-4 h-4"></i> ২০২৫ রেজাল্ট
+          </a>
+          
+          <a href="result 2024.html" class="px-4 py-3 bg-slate-800 hover:bg-slate-700 text-blue-200 hover:text-white border border-slate-600 font-bold text-xs sm:text-sm rounded-xl shadow transition flex items-center gap-2 font-bengali">
+            <i data-lucide="history" class="w-4 h-4 text-blue-400"></i> ২০২৪ আর্কাইভ
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Command Center Widget with Live Dynamic Count -->
+      <div class="lg:col-span-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 rounded-2xl p-5 sm:p-6 text-white space-y-4 shadow-2xl">
+        <div class="flex items-center justify-between border-b border-slate-700 pb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <span class="font-bengali font-bold text-sm text-amber-300">বিজ্ঞান অভীক্ষা ২০২৬ ড্যাশবোর্ড</span>
+          </div>
+          <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-mono font-bold px-2 py-0.5 rounded">
+            LIVE PORTAL
+          </span>
+        </div>
+
+        <div class="space-y-2.5 text-xs font-bengali">
+          <div class="flex items-center justify-between py-1 border-b border-slate-800">
+            <span class="text-slate-400">পরীক্ষার তারিখ:</span>
+            <span class="font-bold text-white">১১ অক্টোবর ২০২৬ (রবিবার)</span>
+          </div>
+          <div class="flex items-center justify-between py-1 border-b border-slate-800">
+            <span class="text-slate-400">সময়সীমা:</span>
+            <span class="font-bold text-white">সকাল ১১:০০ – দুপুর ১:০০</span>
+          </div>
+          <div class="flex items-center justify-between py-1 border-b border-slate-800">
+            <span class="text-slate-400">রিপোর্টিং সময়:</span>
+            <span class="font-bold text-amber-400">সকাল ১০:০০ টা sharp</span>
+          </div>
+          <div class="flex items-center justify-between py-1">
+            <span class="text-slate-400">মোট অংশগ্রহণকারী:</span>
+            <span id="liveCandidateCount" class="font-bold text-emerald-400 font-mono text-sm flex items-center gap-1">
+              <i data-lucide="refresh-cw" class="w-3.5 h-3.5 animate-spin text-amber-400"></i> লোড হচ্ছে...
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 pt-1 font-bengali text-center text-xs">
+          <a href="admit.html" class="py-2.5 px-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold rounded-xl shadow transition">
+            অ্যাডমিট স্লিপ →
+          </a>
+          <button onclick="openNotificationModal()" class="py-2.5 px-2 bg-blue-800 hover:bg-blue-700 text-white font-bold rounded-xl shadow transition flex items-center justify-center gap-1">
+            <i data-lucide="bell" class="w-3.5 h-3.5 text-amber-300"></i> নোটিশ বোর্ড
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Body Content -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-10 space-y-12">
+
+    <!-- About Section with Official Logo & Badges -->
+    <section id="about" class="bg-white rounded-2xl shadow-official border border-slate-200 p-6 sm:p-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-8 pb-8 border-b border-slate-100">
+        
+        <!-- Left: Textual Narrative -->
+        <div class="lg:col-span-8 space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-pbvm-red font-cinzel">About Organization</span>
+            <span class="w-8 h-[2px] bg-pbvm-red inline-block"></span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-bold font-bengali text-slate-900 leading-tight">
+            আমাদের লক্ষ্য, আদর্শ ও বিজ্ঞান বিস্তার আন্দোলন
+          </h3>
+          <p class="text-sm sm:text-base text-slate-600 font-bengali leading-relaxed">
+            ১৯৮৬ সালে প্রতিষ্ঠিত <strong>পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ</strong> রাজ্যের বৃহত্তম গণ-বিজ্ঞান আন্দোলন। আলিপুরদুয়ার জেলা কমিটি শিক্ষার্থীদের মধ্যে বিজ্ঞান শিক্ষাকে প্রাত্যহিক জীবনের সঙ্গে সংযুক্ত করা, পরিবেশ ও জৈববৈচিত্র্য সংরক্ষণ এবং সমাজ থেকে অন্ধবিশ্বাস, ডাইনি প্রথা ও অপবিজ্ঞান দূরীকরণে একনিষ্ঠভাবে কাজ করে চলেছে।
+          </p>
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-50 text-pbvm-blue border border-blue-200">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-pbvm-blue"></i> ৩৮+ বছরের ধারাবাহিক পথচলা
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200">
+              <i data-lucide="award" class="w-3.5 h-3.5 text-amber-700"></i> জেলাব্যাপী বিজ্ঞান মেলা ও অভীক্ষা
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+              <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-700"></i> কুসংস্কারমুক্ত সমাজ গঠনে নিবেদিত
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: Official Logo / Crest Emblem Feature Box -->
+        <div class="lg:col-span-4 flex flex-col items-center justify-center p-6 bg-gradient-to-b from-blue-50/70 to-slate-50 border-2 border-dashed border-blue-200 rounded-2xl text-center relative overflow-hidden">
+          <div class="w-28 h-28 sm:w-32 sm:h-32 bg-white rounded-full p-2 shadow-xl ring-4 ring-amber-400 mb-3 flex items-center justify-center overflow-hidden transition-transform hover:scale-105 duration-300">
+            <img 
+              src="pvbm logo_3.jpeg" 
+              onerror="this.onerror=null; this.src='pvbm logo.jpeg'; this.onerror=function(){this.src='pvbm logo_2.jpeg';};" 
+              alt="PBVM Seal & Crest" 
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <span class="font-bengali text-xs font-bold text-pbvm-blue">পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ</span>
+          <span class="font-cinzel text-[11px] font-extrabold text-slate-800 tracking-wider">PASCHIM BANGA VIGYAN MANCHA</span>
+          <p class="text-[10px] text-slate-500 font-bengali mt-1">
+            আলিপুরদুয়ার জেলা কমিটি • রেজিস্ট্রেশন ও সাংগঠনিক প্রতীক
+          </p>
+          <div class="mt-2 text-[9px] font-bold bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
+            Official Organization Crest
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 3 Activity Pillars with Badges -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="p-5 rounded-xl bg-blue-50/60 border border-blue-100 space-y-2 hover:bg-blue-50 transition">
+          <div class="w-10 h-10 rounded-lg bg-pbvm-blue text-white flex items-center justify-center shadow">
+            <i data-lucide="microscope" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm font-bengali">বিজ্ঞান মেলা ও কর্মশালা</h4>
+          <p class="text-xs text-slate-600 font-bengali leading-relaxed">বিদ্যালয় পর্যায়ে হাতে-কলমে বিজ্ঞান পরীক্ষা, আকাশ পর্যবেক্ষণ শিবির ও মডেল প্রদর্শনী।</p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-amber-50/60 border border-amber-100 space-y-2 hover:bg-amber-50 transition">
+          <div class="w-10 h-10 rounded-lg bg-amber-600 text-white flex items-center justify-center shadow">
+            <i data-lucide="shield-alert" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm font-bengali">কুসংস্কার বিরোধী সচেতনতা</h4>
+          <p class="text-xs text-slate-600 font-bengali leading-relaxed">অলৌকিক দাবির বৈজ্ঞানিক বিশ্লেষণ ও গ্রাম-শহরে পথনাটক এবং আলোচনাসভা আয়োজন।</p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-emerald-50/60 border border-emerald-100 space-y-2 hover:bg-emerald-50 transition">
+          <div class="w-10 h-10 rounded-lg bg-emerald-600 text-white flex items-center justify-center shadow">
+            <i data-lucide="trees" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm font-bengali">পরিবেশ ও স্বাস্থ্য আন্দোলন</h4>
+          <p class="text-xs text-slate-600 font-bengali leading-relaxed">ডুয়ার্সের বন ও বন্যপ্রাণী রক্ষা, প্লাস্টিক মুক্ত সমাজ এবং বিজ্ঞানভিত্তিক স্বাস্থ্য সমীক্ষা।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletters and Publications Section with Periodical Logos & Cover Art -->
+    <section id="newsletters" class="bg-white rounded-2xl shadow-official border border-slate-200 p-6 sm:p-8">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-slate-200 gap-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-pbvm-blue font-cinzel">Periodicals & Bulletins</span>
+          <h3 class="text-xl sm:text-2xl font-bold font-bengali text-slate-900 mt-0.5">
+            মুখপত্র, বুলেটিন ও বিজ্ঞান প্রকাশনা
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-500 font-bengali mt-0.5">
+            বিজ্ঞান মঞ্চের নিয়মিত মাসিক পত্রিকা, জেলা সম্মেলন বুলেটিন এবং শিক্ষামূলক স্মরণিকা
+          </p>
+        </div>
+        <span class="text-xs font-semibold text-slate-400 bg-slate-100 px-3 py-1 rounded-full">প্রকাশনা সংগ্রহ</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        
+        <!-- Periodical 1: Utsa Manush -->
+        <article class="border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between bg-slate-50/50 group">
+          <div class="h-36 bg-gradient-to-r from-blue-900 via-pbvm-blue to-indigo-900 relative p-4 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-white/10 rounded-full blur-sm pointer-events-none group-hover:scale-125 transition duration-500"></div>
+            <div class="flex items-center justify-between z-10">
+              <span class="px-2 py-0.5 bg-amber-400 text-slate-950 font-extrabold text-[10px] rounded uppercase tracking-wider font-mono">
+                মাসিক মুখপত্র
+              </span>
+              <span class="text-[10px] text-blue-200 font-mono">বর্ষ ৪০ • সংখ্যা ৩</span>
+            </div>
+            <div class="flex items-center gap-3 z-10">
+              <div class="w-12 h-12 rounded-xl bg-white/15 backdrop-blur-md border border-white/30 flex items-center justify-center flex-shrink-0 shadow">
+                <i data-lucide="book-open" class="w-6 h-6 text-amber-300"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-extrabold font-bengali text-white leading-tight">উৎস মানুষ</h4>
+                <p class="text-[10px] text-blue-200 font-cinzel">UTSA MANUSH • MONTHLY</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-5 space-y-2.5">
+            <p class="text-xs text-slate-600 font-bengali leading-relaxed">
+              বিজ্ঞান ও সামাজিক অগ্রগতির চিন্তাশীল প্রবন্ধ সংকলন। চলতি সংখ্যার বিশেষ ফোকাস: জলবায়ু পরিবর্তন ও উত্তরবঙ্গের চা বাগান সংলগ্ন পরিবেশ ব্যবস্থা।
+            </p>
+            <div class="flex items-center gap-2 text-[11px] text-slate-500 font-medium">
+              <i data-lucide="file-check-2" class="w-3.5 h-3.5 text-pbvm-blue"></i>
+              <span>প্রবন্ধ • গবেষণা • বিজ্ঞান ভাবনা</span>
+            </div>
+          </div>
+
+          <div class="p-4 bg-white border-t border-slate-200 flex items-center justify-between text-xs">
+            <span class="font-semibold text-slate-700">ডিজিটাল সংস্করণ</span>
+            <button onclick="alert('উৎস মানুষ সাম্প্রতিক সংখ্যার জন্য জেলা কার্যালয়ে যোগাযোগ করুন।')" class="text-pbvm-blue hover:underline font-bold flex items-center gap-1">
+              <i data-lucide="download" class="w-3.5 h-3.5"></i> সূচিপত্র ও বিবরণ
+            </button>
+          </div>
+        </article>
+
+        <!-- Periodical 2: Kishore Bigyan -->
+        <article class="border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between bg-slate-50/50 group">
+          <div class="h-36 bg-gradient-to-r from-amber-700 via-amber-600 to-amber-800 relative p-4 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-white/10 rounded-full blur-sm pointer-events-none group-hover:scale-125 transition duration-500"></div>
+            <div class="flex items-center justify-between z-10">
+              <span class="px-2 py-0.5 bg-white text-slate-900 font-extrabold text-[10px] rounded uppercase tracking-wider font-mono">
+                শিক্ষার্থী ও কিশোর
+              </span>
+              <span class="text-[10px] text-amber-100 font-mono">চল্লিশ বছর পূর্তি সংকলন</span>
+            </div>
+            <div class="flex items-center gap-3 z-10">
+              <div class="w-12 h-12 rounded-xl bg-white/15 backdrop-blur-md border border-white/30 flex items-center justify-center flex-shrink-0 shadow">
+                <i data-lucide="sparkles" class="w-6 h-6 text-amber-200"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-extrabold font-bengali text-white leading-tight">বিজ্ঞান ও বিজ্ঞানী</h4>
+                <p class="text-[10px] text-amber-100 font-cinzel">KISHORE BIGYAN • STUDENTS</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-5 space-y-2.5">
+            <p class="text-xs text-slate-600 font-bengali leading-relaxed">
+              স্কুল পড়ুয়াদের জন্য মজার বিজ্ঞান প্রকল্প, গণিত ধাঁধা, জ্যোতির্বিজ্ঞান এবং ভারতীয় বিজ্ঞানীদের জীবনকথা সমৃদ্ধ কিশোর উপযোগী প্রকাশনা।
+            </p>
+            <div class="flex items-center gap-2 text-[11px] text-slate-500 font-medium">
+              <i data-lucide="compass" class="w-3.5 h-3.5 text-amber-700"></i>
+              <span>হাতে-কলমে পরীক্ষা • কুইজ • প্রজেক্ট</span>
+            </div>
+          </div>
+
+          <div class="p-4 bg-white border-t border-slate-200 flex items-center justify-between text-xs">
+            <span class="font-semibold text-slate-700">পিডিএফ বুলেটিন</span>
+            <button onclick="alert('বিজ্ঞান ও বিজ্ঞানী কিশোর সংখ্যার পিডিএফ অতি শীঘ্রই এই পোর্টালে সংযুক্ত করা হবে।')" class="text-pbvm-blue hover:underline font-bold flex items-center gap-1">
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i> সারসংক্ষেপ
+            </button>
+          </div>
+        </article>
+
+        <!-- Periodical 3: Alipurduar Vigyan Barta -->
+        <article class="border border-slate-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between bg-slate-50/50 group">
+          <div class="h-36 bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 relative p-4 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-white/10 rounded-full blur-sm pointer-events-none group-hover:scale-125 transition duration-500"></div>
+            <div class="flex items-center justify-between z-10">
+              <span class="px-2 py-0.5 bg-amber-400 text-slate-950 font-extrabold text-[10px] rounded uppercase tracking-wider font-mono">
+                জেলা বুলেটিন
+              </span>
+              <span class="text-[10px] text-emerald-200 font-mono">আলিপুরদুয়ার • ২০২৬</span>
+            </div>
+            <div class="flex items-center gap-3 z-10">
+              <div class="w-12 h-12 rounded-xl bg-white/15 backdrop-blur-md border border-white/30 flex items-center justify-center flex-shrink-0 shadow">
+                <i data-lucide="newspaper" class="w-6 h-6 text-emerald-300"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-extrabold font-bengali text-white leading-tight">আলিপুরদুয়ার বিজ্ঞান বার্তা</h4>
+                <p class="text-[10px] text-emerald-200 font-cinzel">DISTRICT BULLETIN • APD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-5 space-y-2.5">
+            <p class="text-xs text-slate-600 font-bengali leading-relaxed">
+              আলিপুরদুয়ার জেলার ব্লক কমিটিসমূহের গত এক বছরের কাজের খতিয়ান, বিদ্যালয় বিজ্ঞান অভিযানের প্রতিবেদন এবং বিজ্ঞান অভীক্ষার নির্দেশিকা।
+            </p>
+            <div class="flex items-center gap-2 text-[11px] text-slate-500 font-medium">
+              <i data-lucide="activity" class="w-3.5 h-3.5 text-emerald-700"></i>
+              <span>ব্লক রিপোর্ট • অভীক্ষা সার্কুলার • নোটিশ</span>
+            </div>
+          </div>
+
+          <div class="p-4 bg-white border-t border-slate-200 flex items-center justify-between text-xs">
+            <span class="font-semibold text-slate-700">জেলা সার্কুলার</span>
+            <button onclick="alert('জেলা বুলেটিন সংগ্রহের জন্য সঞ্জয় ধর (জেলা সম্পাদক)-এর কার্যালয়ে যোগাযোগ করুন।')" class="text-pbvm-blue hover:underline font-bold flex items-center gap-1">
+              <i data-lucide="info" class="w-3.5 h-3.5"></i> জেলা তথ্য
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Highlights & 8-Photo Gallery Section (Includes 7.jpeg) -->
+    <section id="highlights" class="bg-white rounded-2xl shadow-official border border-slate-200 p-6 sm:p-8">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-slate-200 gap-2">
+        <div>
+          <span class="text-xs font-bold tracking-wider uppercase text-pbvm-red font-cinzel">District Highlights</span>
+          <h3 class="text-xl sm:text-2xl font-bold font-bengali text-slate-900 mt-0.5">
+            আমাদের চল্লিশ বছর — বিজ্ঞান অভিযান ও কার্যক্রম চিত্রমালা
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-500 font-bengali mt-0.5">
+            সেমিনার, বিজ্ঞান আলোচনা সভা, পুরস্কার বিতরণ ও উদ্বোধনী সমবেত সংগীতের নির্বাচিত মুহূর্ত
+          </p>
+        </div>
+        <span class="text-xs font-semibold text-slate-400 bg-slate-100 px-3 py-1 rounded-full">ফটো গ্যালারি (৮টি আলোকচিত্র)</span>
+      </div>
+
+      <!-- Responsive Grid for 8 Photos -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        
+        <!-- Photo 0: 7.jpeg (NEW) -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(0)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="7.jpeg" alt="Award presentation to student" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1 font-bengali">মঞ্চে কৃতি ছাত্রকে শংসাপত্র ও ট্রফি প্রদান</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Awarding certificate and medal at Anima Debi Mancha[cite: 4]</p>
+          </div>
+        </div>
+
+        <!-- Photo 1: 1.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(1)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="1.jpeg" alt="Prize presentation" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1 font-bengali">কৃতি ছাত্রীকে শংসাপত্র ও ট্রফি প্রদান</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Award presentation at Alipurduar Newtown Girls' High School[cite: 1]</p>
+          </div>
+        </div>
+
+        <!-- Photo 2: 3.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(2)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="3.jpeg" alt="Merit award" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1 font-bengali">বিজ্ঞান অভীক্ষায় কৃতি শিক্ষার্থীর সম্মাননা</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Honouring young scientific talent with trophy & citation[cite: 2]</p>
+          </div>
+        </div>
+
+        <!-- Photo 3: 4.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(3)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="4.jpeg" alt="Stage ceremony" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1 font-bengali">মঞ্চে বিজ্ঞান ও মেধা সম্মাননা</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Conferring prize to meritorious participant on stage[cite: 3]</p>
+          </div>
+        </div>
+
+        <!-- Photo 4: 2.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(4)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="2.jpeg" onerror="this.onerror=null; this.src='2_3.jpeg';" alt="Keynote Address" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1 font-bengali">মঞ্চে উদ্বোধনী বক্তব্য</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Address at Newtown Girls' High School[cite: 1]</p>
+          </div>
+        </div>
+
+        <!-- Photo 5: 5.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(5)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="5.jpeg" onerror="this.onerror=null; this.src='5_3.jpeg';" alt="Interaction" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1 font-bengali">শিক্ষার্থী ও শিক্ষকদের উন্মুক্ত বিজ্ঞান বার্তালাপ</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Interactive scientific seminar with students[cite: 2]</p>
+          </div>
+        </div>
+
+        <!-- Photo 6: 6.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(6)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="6.jpeg" onerror="this.onerror=null; this.src='6_3.jpeg';" alt="Prize Winners" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1 font-bengali">পুরস্কার প্রাপক শিক্ষার্থীদের যৌথ দল</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Prize-winning students with teachers[cite: 3]</p>
+          </div>
+        </div>
+
+        <!-- Photo 7: 9.jpeg -->
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(7)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="9.jpeg" onerror="this.onerror=null; this.src='9_2.jpeg';" alt="Anthem" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1 font-bengali">চল্লিশ বছর পূর্তির উদ্বোধনী সমবেত সংগীত</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Opening chorale & anthem celebrating 40 years</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="bg-white rounded-2xl shadow-official border border-slate-200 p-6 sm:p-8">
+      <h3 class="text-xl font-bold font-bengali text-slate-900 mb-6 flex items-center gap-2">
+        <i data-lucide="users" class="w-5 h-5 text-pbvm-blue"></i> জেলা কমিটি ও দায়িত্বপ্রাপ্ত কর্মকর্তা
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="border border-slate-200 rounded-xl p-5 flex items-center gap-4 bg-slate-50 hover:bg-blue-50/40 transition">
+          <div class="w-14 h-14 rounded-full bg-blue-100 text-pbvm-blue flex items-center justify-center flex-shrink-0 font-bold text-lg font-cinzel ring-2 ring-blue-200">
+            SD
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-base">Sanjay Dhar (সঞ্জয় ধর)</h4>
+            <p class="text-xs font-semibold text-pbvm-blue">District Secretary (জেলা সম্পাদক)</p>
+            <p class="text-[11px] text-slate-500 font-bengali mt-0.5">পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ, আলিপুরদুয়ার জেলা কমিটি</p>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-xl p-5 flex items-center gap-4 bg-slate-50 hover:bg-amber-50/40 transition">
+          <div class="w-14 h-14 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center flex-shrink-0 font-bold text-lg font-cinzel ring-2 ring-amber-200">
+            PG
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-base">Prasun Gangopadhyay (প্রসূন গঙ্গোপাধ্যায়)</h4>
+            <p class="text-xs font-semibold text-amber-700">Convenor (আহ্বায়ক)</p>
+            <p class="text-[11px] text-slate-500 font-bengali mt-0.5">বিজ্ঞান অভীক্ষা ২০২৬ উপ-সমিতি, আলিপুরদুয়ার</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer with Inter-Links -->
+  <footer class="bg-slate-950 text-slate-400 border-t border-slate-800 py-8 px-4 text-xs text-center mt-auto">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full bg-white p-0.5 flex-shrink-0">
+          <img src="pvbm logo_3.jpeg" onerror="this.onerror=null; this.src='pvbm logo.jpeg';" alt="Logo" class="w-full h-full object-contain" />
+        </div>
+        <div class="text-left">
+          <div class="font-bold text-slate-200 font-bengali">পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ — আলিপুরদুয়ার জেলা কমিটি</div>
+          <div class="text-[11px] text-slate-500 font-cinzel">PASCHIM BANGA VIGYAN MANCHA, ALIPURDUAR</div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 font-bengali">
+        <a href="index.html" class="text-amber-400 font-bold hover:underline">হোম পেজ</a>
+        <span>•</span>
+        <button onclick="openNotificationModal()" class="text-amber-300 hover:underline flex items-center gap-1">
+          <i data-lucide="bell" class="w-3.5 h-3.5"></i> বিজ্ঞপ্তি তালিকা
+        </button>
+        <span>•</span>
+        <a href="syllabus.pdf" target="_blank" rel="noopener noreferrer" class="text-rose-400 hover:underline flex items-center gap-1 font-bold">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i> সিলেবাস PDF
+        </a>
+        <span>•</span>
+        <a href="admit.html" class="text-blue-400 hover:underline">অ্যাডমিট কার্ড ২০২৬</a>
+        <span>•</span>
+        <a href="result 2025.html" class="text-emerald-400 hover:underline">রেজাল্ট ২০২৫</a>
+        <span>•</span>
+        <a href="result 2024.html" class="text-blue-300 hover:underline">রেজাল্ট ২০২৪</a>
+        <span>•</span>
+        <span>Alipurduar, West Bengal</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Official Notifications Modal Dialog with Sl No, Date, Title, and PDF click -->
+  <div id="notificationModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl border border-slate-200 max-w-3xl w-full overflow-hidden flex flex-col max-h-[85vh] animate-in fade-in zoom-in-95 duration-200">
+      
+      <!-- Modal Header -->
+      <div class="bg-gradient-to-r from-pbvm-darkblue to-pbvm-blue text-white px-5 py-4 border-b-2 border-amber-400 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center shadow-inner">
+            <i data-lucide="bell-ring" class="w-5 h-5 text-amber-300"></i>
+          </div>
+          <div>
+            <h3 class="font-bengali font-bold text-base text-white">অফিসিয়াল বিজ্ঞপ্তি ও নির্দেশিকা</h3>
+            <p class="text-[10px] text-blue-200 font-sans">Official Notices, Circulars & Examination Notifications</p>
+          </div>
+        </div>
+        <button onclick="closeNotificationModal()" class="text-slate-300 hover:text-white text-2xl font-bold p-1 leading-none transition">
+          &times;
+        </button>
+      </div>
+
+      <!-- Notifications Table -->
+      <div class="p-5 overflow-y-auto flex-1">
+        <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-700 font-bold border-b border-slate-200 font-bengali uppercase text-[11px]">
+                <th class="p-3 text-center w-16 border-r border-slate-200 font-sans">Sl No</th>
+                <th class="p-3 w-32 border-r border-slate-200 font-sans">Date</th>
+                <th class="p-3">বিজ্ঞপ্তির শিরোনাম (Notification Title)</th>
+                <th class="p-3 text-center w-28">নথি (File)</th>
+              </tr>
+            </thead>
+            <tbody id="notificationTableBody" class="divide-y divide-slate-100 font-bengali">
+              <!-- Dynamically populated via NOTIFICATIONS array -->
+            </tbody>
+          </table>
+        </div>
+        
+        <p class="text-[11px] text-slate-500 mt-3 font-bengali flex items-center gap-1.5">
+          <i data-lucide="info" class="w-4 h-4 text-pbvm-blue flex-shrink-0"></i>
+          বিজ্ঞপ্তির শিরোনাম অথবা PDF বাটনে ক্লিক করলে সংশ্লিষ্ট নথিটি নতুন ট্যাবে খুলে যাবে।
+        </p>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="bg-slate-50 px-5 py-3 border-t border-slate-200 flex justify-end">
+        <button onclick="closeNotificationModal()" class="px-5 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 rounded-xl text-xs font-bold transition font-bengali">
+          বন্ধ করুন (Close)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full flex flex-col items-center">
+      <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white hover:text-amber-400 text-3xl font-bold p-2 transition">&times;</button>
+      <img id="lightboxImg" src="" alt="Enlarged view" class="max-h-[75vh] w-auto max-w-full rounded-lg shadow-2xl object-contain" />
+      <div class="mt-4 text-center text-white font-bengali">
+        <h4 id="lightboxCaption" class="text-base font-bold"></h4>
+        <p id="lightboxSub" class="text-xs text-slate-400 mt-0.5 font-sans"></p>
+      </div>
+      <div class="flex gap-4 mt-3">
+        <button onclick="changePhoto(-1)" class="px-4 py-1.5 bg-white/20 hover:bg-white/30 text-white rounded-lg text-sm">Previous</button>
+        <button onclick="changePhoto(1)" class="px-4 py-1.5 bg-white/20 hover:bg-white/30 text-white rounded-lg text-sm">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Configuration for Vigyan Aviksha 2026 Google Sheet
+    const SHEET_2026_ID = '1-BtyKqUBdvt0kN_McRoH8SJ0-vd8G9fDQzokgI4mOpI';
+    const SHEET_2026_GID = '910095044';
+
+    // Official Notifications Array: Add, edit, or remove notifications here
+    const NOTIFICATIONS = [
+      {
+        sl: 1,
+        date: '2026-05-05',
+        title: 'Vigyan Avikisha 2026 Examination Notification',
+        pdfUrl: 'notices1.pdf'
+      }
+    ];
+
+    // Helper: Convert English digits to Bengali numerals
+    function toBengaliNumerals(num) {
+      const bengaliDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+      return String(num).replace(/\d/g, d => bengaliDigits[d]);
+    }
+
+    // Render Notifications in the modal table
+    function renderNotifications() {
+      const tbody = document.getElementById("notificationTableBody");
+      if (!tbody) return;
+
+      tbody.innerHTML = NOTIFICATIONS.map(n => `
+        <tr class="hover:bg-blue-50/60 transition group">
+          <td class="p-3 text-center font-mono font-bold text-slate-600 border-r border-slate-200">${n.sl}</td>
+          <td class="p-3 font-mono text-slate-600 border-r border-slate-200 whitespace-nowrap">${n.date}</td>
+          <td class="p-3">
+            <a 
+              href="${n.pdfUrl}" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="font-semibold text-pbvm-blue hover:text-red-700 hover:underline flex items-center gap-1.5 transition leading-snug"
+            >
+              <i data-lucide="file-text" class="w-3.5 h-3.5 flex-shrink-0 text-slate-400 group-hover:text-red-600"></i>
+              <span>${n.title}</span>
+            </a>
+          </td>
+          <td class="p-3 text-center">
+            <a 
+              href="${n.pdfUrl}" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="inline-flex items-center gap-1 px-2.5 py-1 bg-red-50 hover:bg-red-100 text-red-700 border border-red-200 rounded-lg font-sans text-[11px] font-bold transition shadow-sm"
+            >
+              <i data-lucide="download" class="w-3 h-3"></i> PDF
+            </a>
+          </td>
+        </tr>
+      `).join('');
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    // Modal Control Functions
+    function openNotificationModal() {
+      renderNotifications();
+      const modal = document.getElementById("notificationModal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeNotificationModal() {
+      const modal = document.getElementById("notificationModal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    // Update the live candidate counter in the dashboard widget
+    function updateCandidateDisplay(count) {
+      const el = document.getElementById('liveCandidateCount');
+      if (el) {
+        el.innerHTML = `<span>${toBengaliNumerals(count.toLocaleString())} জন পরীক্ষার্থী</span>`;
+      }
+    }
+
+    // Process Google Sheets GViz Response
+    function parseRosterData(data) {
+      if (!data || !data.table || !data.table.rows) return false;
+      const rows = data.table.rows;
+      let validCount = 0;
+
+      rows.forEach(r => {
+        if (!r || !r.c) return;
+        const rollCell = r.c[2];
+        if (rollCell && rollCell.v !== null && rollCell.v !== undefined) {
+          const val = String(rollCell.v).trim();
+          if (val && val !== 'ROLL' && val.length >= 4) {
+            validCount++;
+          }
+        }
+      });
+
+      if (validCount > 0) {
+        localStorage.setItem("pbvm_2026_count", validCount);
+        updateCandidateDisplay(validCount);
+        return true;
+      }
+      return false;
+    }
+
+    window.googleHomeRosterCallback = function(data) {
+      parseRosterData(data);
+    };
+
+    function autoSyncCandidateCount() {
+      const cachedCount = localStorage.getItem("pbvm_2026_count");
+      if (cachedCount && !isNaN(Number(cachedCount))) {
+        updateCandidateDisplay(Number(cachedCount));
+      } else {
+        const cachedRoster = localStorage.getItem("pbvm_full_roster_2026");
+        if (cachedRoster) {
+          try {
+            const parsed = JSON.parse(cachedRoster);
+            if (Array.isArray(parsed) && parsed.length > 0) {
+              updateCandidateDisplay(parsed.length);
+            }
+          } catch (e) {}
+        }
+      }
+
+      const existingScript = document.getElementById("gviz_home_count_script");
+      if (existingScript) existingScript.remove();
+
+      const script = document.createElement("script");
+      script.id = "gviz_home_count_script";
+      script.src = `https://docs.google.com/spreadsheets/d/${SHEET_2026_ID}/gviz/tq?tqx=responseHandler:googleHomeRosterCallback&gid=${SHEET_2026_GID}&t=${Date.now()}`;
+      
+      script.onerror = function() {
+        const fallbackCount = localStorage.getItem("pbvm_2026_count") || '2480';
+        updateCandidateDisplay(Number(fallbackCount));
+      };
+
+      document.body.appendChild(script);
+    }
+
+    // Photo Gallery Lightbox Configuration (Includes 7.jpeg)
+    const GALLERY_ITEMS = [
+      { src: '7.jpeg', fallback: '7.jpeg', title: 'মঞ্চে কৃতি ছাত্রকে শংসাপত্র ও ট্রফি প্রদান', sub: 'Awarding certificate and medal at Anima Debi Mancha[cite: 4]' },
+      { src: '1.jpeg', fallback: '1.jpeg', title: 'কৃতি ছাত্রীকে শংসাপত্র ও ট্রফি প্রদান', sub: 'Award presentation at Alipurduar Newtown Girls\' High School[cite: 1]' },
+      { src: '3.jpeg', fallback: '3.jpeg', title: 'বিজ্ঞান অভীক্ষায় কৃতি শিক্ষার্থীর সম্মাননা', sub: 'Honouring young scientific talent with trophy & citation[cite: 2]' },
+      { src: '4.jpeg', fallback: '4.jpeg', title: 'মঞ্চে বিজ্ঞান ও মেধা সম্মাননা', sub: 'Conferring prize to meritorious participant on stage[cite: 3]' },
+      { src: '2.jpeg', fallback: '2_3.jpeg', title: 'মঞ্চে উদ্বোধনী বক্তব্য', sub: 'Address at Newtown Girls\' High School[cite: 1]' },
+      { src: '5.jpeg', fallback: '5_3.jpeg', title: 'শিক্ষার্থী ও শিক্ষকদের উন্মুক্ত বিজ্ঞান বার্তালাপ', sub: 'Interactive scientific seminar with students[cite: 2]' },
+      { src: '6.jpeg', fallback: '6_3.jpeg', title: 'পুরস্কার প্রাপক শিক্ষার্থীদের যৌথ দল', sub: 'Prize-winning students with teachers[cite: 3]' },
+      { src: '9.jpeg', fallback: '9_2.jpeg', title: 'চল্লিশ বছর পূর্তির উদ্বোধনী সমবেত সংগীত', sub: 'Opening chorale & anthem celebrating 40 years' }
+    ];
+
+    let currentPhotoIdx = 0;
+    function openLightbox(idx) {
+      currentPhotoIdx = idx;
+      const item = GALLERY_ITEMS[idx];
+      const imgEl = document.getElementById("lightboxImg");
+      imgEl.src = item.src;
+      imgEl.onerror = function() { this.src = item.fallback; };
+      document.getElementById("lightboxCaption").textContent = item.title;
+      document.getElementById("lightboxSub").textContent = item.sub;
+      const modal = document.getElementById("lightboxModal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById("lightboxModal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    function changePhoto(dir) {
+      currentPhotoIdx = (currentPhotoIdx + dir + GALLERY_ITEMS.length) % GALLERY_ITEMS.length;
+      openLightbox(currentPhotoIdx);
+    }
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeLightbox();
+        closeNotificationModal();
+      }
+      if (e.key === "ArrowLeft") changePhoto(-1);
+      if (e.key === "ArrowRight") changePhoto(1);
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.lucide) lucide.createIcons();
+      autoSyncCandidateCount();
+    });
+  </script>
+</body>
+</html>
