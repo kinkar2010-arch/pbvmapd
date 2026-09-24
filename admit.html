@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vigyan Aviksha 2026 | Enrollment Status & Admit Portal - PBVM Alipurduar</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pbvm: {
+              blue: '#002b7f',
+              darkblue: '#001a4e',
+              red: '#e11d48',
+              gold: '#d97706',
+              surface: '#f8fafc'
+            }
+          },
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            bengali: ['Noto Serif Bengali', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 8mm 10mm;
+      }
+      html, body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      #admitCardSection {
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+      }
+      .admit-container {
+        border: 2px solid #002b7f !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-height: 275mm !important;
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+      }
+      .admit-body {
+        padding: 12px 18px !important;
+      }
+      .admit-header-box {
+        padding: 10px 16px !important;
+      }
+      .admit-watermark {
+        opacity: 0.05 !important;
+      }
+    }
+    .admit-watermark {
+      background-image: url('pvbm logo_3.jpeg'), url('pvbm logo.jpeg'), url('pvbm logo_2.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 240px;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen flex flex-col antialiased">
+
+  <!-- Header with Triangular Navigation to index.html & result 2025.html -->
+  <header class="no-print bg-gradient-to-r from-pbvm-darkblue via-pbvm-blue to-[#084298] text-white shadow-xl border-b-4 border-amber-400 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4 text-center md:text-left">
+        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full p-1 shadow-lg ring-4 ring-amber-400 flex-shrink-0 flex items-center justify-center overflow-hidden">
+          <img 
+            src="pvbm logo_3.jpeg" 
+            onerror="this.onerror=null; this.src='pvbm logo.jpeg'; this.onerror=function(){this.src='pvbm logo_2.jpeg';};" 
+            alt="Paschim Banga Vigyan Mancha Alipurduar Logo" 
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <div>
+          <div class="font-bengali text-amber-300 text-base sm:text-xl font-bold tracking-wide">
+            পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ — আলিপুরদুয়ার জেলা কমিটি
+          </div>
+          <h1 class="font-cinzel text-lg sm:text-2xl lg:text-3xl font-extrabold tracking-tight uppercase text-white drop-shadow">
+            Paschim Banga Vigyan Mancha
+          </h1>
+          <p class="text-xs sm:text-sm font-semibold tracking-wider text-blue-200 mt-0.5">
+            Alipurduar District Committee • Alipurduar, West Bengal
+          </p>
+        </div>
+      </div>
+      
+      <!-- Interconnected Links -->
+      <div class="flex flex-wrap items-center justify-center md:justify-end gap-2.5">
+        <a href="index.html" class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 border border-white/25 text-white font-bold px-4 py-2 rounded-xl text-xs uppercase tracking-wider transition">
+          <i data-lucide="home" class="w-4 h-4 text-amber-300"></i> Home Page
+        </a>
+        <a href="admit.html" class="inline-flex items-center gap-1.5 bg-amber-400 text-slate-950 font-extrabold px-4 py-2 rounded-xl text-xs uppercase tracking-wider shadow-lg ring-2 ring-white">
+          <i data-lucide="ticket" class="w-3.5 h-3.5"></i> Admit 2026
+        </a>
+        <a href="result 2025.html" class="inline-flex items-center gap-1.5 text-xs bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-2 rounded-xl shadow-lg transition">
+          <i data-lucide="award" class="w-3.5 h-3.5"></i> Results 2025
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Subheader with Exam Countdown -->
+  <section class="no-print bg-slate-900 text-white border-b border-slate-800 py-3 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-3 text-center lg:text-left">
+      <div class="flex items-center gap-2 text-xs sm:text-sm text-slate-300">
+        <i data-lucide="calendar-clock" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
+        <span><strong>Examination Date:</strong> Sunday, 11 October 2026 | <strong>Time:</strong> 11:00 AM – 1:00 PM | <strong>Reporting Time:</strong> 10:00 AM sharp</span>
+      </div>
+      
+      <div class="flex items-center justify-center gap-4 text-xs">
+        <div class="flex items-center gap-1.5 font-mono font-bold text-amber-400" id="countdownTimer">
+          <span class="bg-slate-800 px-2 py-1 rounded border border-slate-700" id="cdDays">00d</span> :
+          <span class="bg-slate-800 px-2 py-1 rounded border border-slate-700" id="cdHours">00h</span> :
+          <span class="bg-slate-800 px-2 py-1 rounded border border-slate-700" id="cdMins">00m</span> :
+          <span class="bg-slate-800 px-2 py-1 rounded border border-slate-700" id="cdSecs">00s</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-8 flex flex-col gap-8">
+
+    <!-- Search Section -->
+    <div class="no-print bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sm:p-8 max-w-3xl mx-auto w-full">
+      <div class="text-center max-w-xl mx-auto mb-6">
+        <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3.5 bg-white rounded-full p-1 shadow-md ring-2 ring-amber-400 flex items-center justify-center overflow-hidden">
+          <img 
+            src="pvbm logo_3.jpeg" 
+            onerror="this.onerror=null; this.src='pvbm logo.jpeg'; this.onerror=function(){this.src='pvbm logo_2.jpeg';};" 
+            alt="PBVM Emblem" 
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 font-cinzel">Download Provisional Admit Card</h2>
+        <p class="text-sm text-slate-600 mt-1 font-bengali">
+          পরীক্ষার্থীর <strong>নাম</strong>, <strong>অভিভাবকের নাম</strong> অথবা <strong>৭-সংখ্যার রোল নম্বর</strong> দিয়ে অ্যাডমিট স্লিপ অনুসন্ধান করুন।
+        </p>
+      </div>
+
+      <div class="relative max-w-xl mx-auto">
+        <div class="relative flex items-center">
+          <i data-lucide="user-check" class="w-5 h-5 text-slate-400 absolute left-4 pointer-events-none"></i>
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Type Student Name or Roll Number..." 
+            class="w-full pl-11 pr-24 py-3.5 bg-slate-50 border-2 border-slate-300 focus:border-pbvm-blue focus:bg-white rounded-xl text-slate-900 text-sm sm:text-base outline-none transition-all shadow-inner"
+            autocomplete="off"
+            oninput="handleLiveSearch(this.value)"
+          />
+          <button 
+            type="button" 
+            onclick="clearSearch()"
+            id="clearBtn"
+            class="hidden absolute right-3 px-2 py-1 text-xs font-semibold text-slate-400 hover:text-slate-600"
+          >
+            Clear
+          </button>
+        </div>
+
+        <div id="autocompleteDropdown" class="hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-2xl border border-slate-200 overflow-hidden z-30 max-h-80 overflow-y-auto divide-y divide-slate-100"></div>
+      </div>
+
+      <!-- Live Sync & Quick Inter-links -->
+      <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">
+        <span class="flex items-center gap-1.5">
+          <i data-lucide="database" class="w-3.5 h-3.5 text-pbvm-blue"></i>
+          Database: <strong id="totalCountDisplay" class="text-slate-800">Checking cache...</strong>
+        </span>
+        
+        <div class="flex items-center gap-3">
+          <a href="index.html" class="text-slate-700 hover:text-pbvm-blue font-bold flex items-center gap-1 transition">
+            <i data-lucide="home" class="w-3.5 h-3.5"></i> Home
+          </a>
+          <span class="text-slate-300">|</span>
+          <a href="result 2025.html" class="text-emerald-700 hover:underline font-bold flex items-center gap-1 transition">
+            <i data-lucide="award" class="w-3.5 h-3.5"></i> Check 2025 Results
+          </a>
+          <span class="text-slate-300">|</span>
+          <span id="syncIndicator" class="inline-flex items-center gap-1 text-slate-400">
+            <i data-lucide="refresh-cw" class="w-3 h-3 animate-spin"></i> Auto-syncing...
+          </span>
+          <button type="button" onclick="autoLoadRoster(true)" class="text-pbvm-blue hover:underline font-semibold flex items-center gap-1 transition">
+            Refresh
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Candidate Admit Card (1-Page A4 Printable) -->
+    <div id="admitCardSection" class="hidden max-w-3xl mx-auto w-full">
+      <div class="admit-container bg-white rounded-xl shadow-2xl border-2 border-pbvm-blue overflow-hidden relative text-slate-900">
+        
+        <div class="absolute inset-0 admit-watermark opacity-[0.04] pointer-events-none z-0"></div>
+
+        <div class="admit-header-box bg-gradient-to-r from-pbvm-darkblue to-pbvm-blue text-white px-5 py-3.5 border-b-2 border-amber-400 flex items-center justify-between gap-3 relative z-10">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-full p-0.5 shadow flex-shrink-0 flex items-center justify-center">
+              <img 
+                src="pvbm logo_3.jpeg" 
+                onerror="this.onerror=null; this.src='pvbm logo.jpeg'; this.onerror=function(){this.src='pvbm logo_2.jpeg';};" 
+                alt="Emblem" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <div>
+              <div class="font-bengali text-amber-300 text-xs sm:text-sm font-semibold leading-tight">পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ — আলিপুরদুয়ার জেলা কমিটি</div>
+              <h3 class="font-cinzel text-sm sm:text-base font-bold tracking-wide leading-tight">PASCHIM BANGA VIGYAN MANCHA</h3>
+              <p class="text-[10px] sm:text-xs text-blue-200 tracking-wider">VIGYAN AVIKSHA 2026 • PROVISIONAL ADMIT SLIP</p>
+            </div>
+          </div>
+          <div class="text-right flex-shrink-0">
+            <span class="px-2 py-0.5 bg-emerald-500 text-white font-bold text-[10px] uppercase rounded tracking-wider shadow">
+              ENROLLED
+            </span>
+            <div class="text-[9px] text-blue-200 mt-0.5">District Candidate</div>
+          </div>
+        </div>
+
+        <div class="admit-body p-4 sm:p-5 relative z-10 space-y-3.5">
+          <div class="flex items-center justify-between border-b pb-2">
+            <div>
+              <span class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">Candidate Roll Number</span>
+              <div class="text-xl sm:text-2xl font-mono font-extrabold text-pbvm-blue tracking-tight leading-none" id="cardRoll">-</div>
+            </div>
+            <div class="text-right">
+              <span class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider">Registration Status</span>
+              <div class="flex items-center justify-end gap-1 text-emerald-700 font-bold text-xs">
+                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i> Verified in Official Roster
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-xs">
+            <div>
+              <div class="text-[10px] text-slate-500 font-medium">Candidate's Full Name</div>
+              <div class="font-bold text-slate-900 text-sm leading-snug" id="cardName">-</div>
+            </div>
+            <div>
+              <div class="text-[10px] text-slate-500 font-medium">Father's / Guardian's Name</div>
+              <div class="font-bold text-slate-900 text-sm leading-snug" id="cardGuardian">-</div>
+            </div>
+            <div class="col-span-2">
+              <div class="text-[10px] text-slate-500 font-medium">School Name</div>
+              <div class="font-bold text-slate-900 text-xs sm:text-sm leading-snug" id="cardSchool">-</div>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <div class="text-[10px] text-slate-500 font-medium">Class / Standard</div>
+                <div class="font-bold text-slate-900" id="cardClass">-</div>
+              </div>
+              <div>
+                <div class="text-[10px] text-slate-500 font-medium">Medium</div>
+                <div class="font-bold text-slate-900" id="cardMedium">-</div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <div class="text-[10px] text-slate-500 font-medium">Venue Code / Block</div>
+                <div class="font-bold text-slate-900" id="cardCodeBlock">-</div>
+              </div>
+              <div>
+                <div class="text-[10px] text-slate-500 font-medium">Registered Contact</div>
+                <div class="font-bold font-mono text-slate-900" id="cardContact">-</div>
+              </div>
+            </div>
+            <div class="col-span-2">
+              <div class="text-[10px] text-slate-500 font-medium">Assigned Examination Venue</div>
+              <div class="font-bold text-pbvm-blue text-xs sm:text-sm flex items-center gap-1 leading-snug" id="cardVenue">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 flex-shrink-0 text-red-500"></i>
+                <span>-</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-amber-50/90 border border-amber-200 rounded-lg p-2.5 flex items-center justify-between gap-2 text-amber-950 text-xs">
+            <div class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-4 h-4 text-amber-700 flex-shrink-0"></i>
+              <div>
+                <span class="font-bold">Date: Sunday, 11 October 2026</span> • Timing: 11:00 AM – 1:00 PM (2 Hours)
+                <div class="text-[10px] text-amber-800 font-medium leading-none mt-0.5"><strong>Reporting Time: 10:00 AM sharp</strong> (Hall gates close at 10:45 AM)</div>
+              </div>
+            </div>
+            <div class="text-[9px] font-bold bg-amber-200 text-amber-900 px-2 py-0.5 rounded whitespace-nowrap hidden sm:block">
+              2 HOURS EXAM
+            </div>
+          </div>
+
+          <div class="pt-2 border-t border-slate-200 flex items-center justify-between gap-3 text-[10px] text-slate-600">
+            <div class="space-y-0.5 leading-tight max-w-[75%]">
+              <div class="font-bold text-slate-800 text-[11px]">Instructions for Candidates:</div>
+              <ul class="list-disc list-inside space-y-0.5 text-slate-600">
+                <li>Carry this printed Provisional Admit Card or note your 7-digit Roll Number.</li>
+                <li>Report to your assigned Examination Venue at 10:00 AM sharp.</li>
+                <li>Bring blue/black ballpoint pens and a standard writing pad.</li>
+                <li>Results will be published on the official portal in November 2026.</li>
+              </ul>
+            </div>
+            <div class="flex flex-col items-center flex-shrink-0">
+              <div id="qrcode" class="p-1 bg-white border border-slate-300 rounded shadow-sm"></div>
+              <span class="text-[8px] text-slate-400 font-mono mt-0.5">PBVM Verification</span>
+            </div>
+          </div>
+
+          <!-- Official Signatures (Sanjay Dhar & Prasun Gangopadhyay) -->
+          <div class="pt-3 border-t border-dashed border-slate-300 flex items-end justify-between text-center text-[10px]">
+            <div class="w-40 flex flex-col items-center">
+              <div class="h-11 flex items-end justify-center">
+                <img 
+                  src="sanjay dhar.png" 
+                  alt="Signature of Sanjay Dhar" 
+                  class="max-h-10 max-w-[130px] object-contain"
+                />
+              </div>
+              <div class="w-full border-t border-slate-500 pt-1 font-bold text-slate-800 text-[10px]">
+                Sanjay Dhar
+              </div>
+              <div class="text-[9px] font-semibold text-slate-700">District Secretary</div>
+              <div class="text-[8px] text-slate-500">PBVM Alipurduar</div>
+            </div>
+
+            <div class="w-40 flex flex-col items-center">
+              <div class="h-11 flex items-end justify-center">
+                <img 
+                  src="prasun.png" 
+                  alt="Signature of Prasun Gangopadhyay" 
+                  class="max-h-10 max-w-[130px] object-contain"
+                />
+              </div>
+              <div class="w-full border-t border-slate-500 pt-1 font-bold text-slate-800 text-[10px]">
+                Prasun Gangopadhyay
+              </div>
+              <div class="text-[9px] font-semibold text-slate-700">Convenor</div>
+              <div class="text-[8px] text-slate-500">Vigyan Aviksha 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Bar with Inter-Links -->
+        <div class="no-print bg-slate-50 px-5 py-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <button onclick="clearSearch()" class="px-3 py-1.5 text-xs font-semibold text-slate-600 hover:text-slate-900 transition">
+              ← Check Another Candidate
+            </button>
+            <a href="index.html" class="px-3 py-1.5 text-xs font-semibold text-pbvm-blue hover:underline flex items-center gap-1">
+              <i data-lucide="home" class="w-3.5 h-3.5"></i> Return Home
+            </a>
+          </div>
+          <button onclick="window.print()" class="px-5 py-2 bg-pbvm-blue hover:bg-pbvm-darkblue text-white rounded-lg font-bold text-xs shadow transition flex items-center gap-2">
+            <i data-lucide="printer" class="w-4 h-4"></i> Print 1-Page A4 Admit Card
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 4 Photo Highlights -->
+    <section class="no-print bg-white rounded-2xl shadow border border-slate-200 p-6 sm:p-8">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-slate-200 gap-2">
+        <div>
+          <span class="text-xs font-bold tracking-wider uppercase text-pbvm-red">District Highlights</span>
+          <h3 class="text-xl sm:text-2xl font-bold font-cinzel text-slate-900">
+            আমাদের চল্লিশ বছর — বিজ্ঞান অভিযান ২০২৬
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">
+            Key moments from seminars, interactive workshops, awards, and the inaugural chorale
+          </p>
+        </div>
+        <div class="text-xs font-semibold text-slate-400 bg-slate-100 px-3 py-1 rounded-full">
+          Event Gallery
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(0)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="2.jpeg" onerror="this.onerror=null; this.src='2_3.jpeg';" alt="Keynote Speech" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1">মঞ্চে উদ্বোধনী বক্তব্য</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Address at Newtown Girls' High School</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(1)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="5.jpeg" onerror="this.onerror=null; this.src='5_3.jpeg';" alt="Interaction" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1">শিক্ষার্থী ও শিক্ষকদের উন্মুক্ত বিজ্ঞান বার্তালাপ</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Interactive scientific seminar with students</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(2)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="6.jpeg" onerror="this.onerror=null; this.src='6_3.jpeg';" alt="Prize Winners" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1">পুরস্কার প্রাপক শিক্ষার্থীদের যৌথ দল</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Prize-winning students with teachers</p>
+          </div>
+        </div>
+
+        <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 shadow hover:shadow-lg transition cursor-pointer" onclick="openLightbox(3)">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="9.jpeg" onerror="this.onerror=null; this.src='9_2.jpeg';" alt="Opening Anthem" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+          </div>
+          <div class="p-3 bg-white">
+            <h4 class="font-bold text-xs text-slate-800 line-clamp-1">চল্লিশ বছর পূর্তির উদ্বোধনী সমবেত সংগীত</h4>
+            <p class="text-[11px] text-slate-500 mt-0.5">Opening chorale & anthem celebrating 40 years</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer with Triangular Inter-Links -->
+  <footer class="no-print bg-slate-900 text-slate-400 border-t border-slate-800 py-6 px-4 text-xs text-center">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-full bg-white p-0.5 flex-shrink-0">
+          <img src="pvbm logo_3.jpeg" onerror="this.onerror=null; this.src='pvbm logo.jpeg';" alt="Logo" class="w-full h-full object-contain" />
+        </div>
+        <span>© 2026 Paschim Banga Vigyan Mancha, Alipurduar District Committee.</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="text-amber-400 hover:underline">Home</a>
+        <span>•</span>
+        <a href="admit.html" class="text-white font-bold underline">Admit Card 2026</a>
+        <span>•</span>
+        <a href="result 2025.html" class="text-emerald-400 hover:underline">2025 Results</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightboxModal" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full flex flex-col items-center">
+      <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white hover:text-amber-400 text-3xl font-bold p-2 transition">&times;</button>
+      <img id="lightboxImg" src="" alt="Enlarged view" class="max-h-[75vh] w-auto max-w-full rounded-lg shadow-2xl object-contain" />
+      <div class="mt-4 text-center text-white">
+        <h4 id="lightboxCaption" class="text-base font-bold"></h4>
+        <p id="lightboxSub" class="text-xs text-slate-400 mt-0.5"></p>
+      </div>
+      <div class="flex gap-4 mt-3">
+        <button onclick="changePhoto(-1)" class="px-4 py-1.5 bg-white/20 hover:bg-white/30 text-white rounded-lg text-sm">Previous</button>
+        <button onclick="changePhoto(1)" class="px-4 py-1.5 bg-white/20 hover:bg-white/30 text-white rounded-lg text-sm">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const SHEET_ID = '1-BtyKqUBdvt0kN_McRoH8SJ0-vd8G9fDQzokgI4mOpI';
+    const SHEET_GID = '910095044';
+
+    function getDatabase() {
+      const stored = localStorage.getItem("pbvm_full_roster_2026");
+      if (stored) {
+        try {
+          const parsed = JSON.parse(stored);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        } catch (e) {}
+      }
+      return [];
+    }
+
+    function saveDatabase(data) {
+      try {
+        localStorage.setItem("pbvm_full_roster_2026", JSON.stringify(data));
+      } catch (e) {
+        console.warn("Local storage full, cached in memory.");
+      }
+      const countEl = document.getElementById("totalCountDisplay");
+      if (countEl) countEl.textContent = data.length.toLocaleString() + " Enrolled Candidates";
+    }
+
+    function parseGVizRoster(data) {
+      if (!data || !data.table || !data.table.rows) return false;
+      const rows = data.table.rows;
+      const parsed = [];
+
+      rows.forEach(r => {
+        if (!r || !r.c) return;
+        const c = r.c.map(cell => (cell && cell.v !== null && cell.v !== undefined) ? String(cell.v).trim() : '');
+
+        let roll = c[2] || '';
+        let name = c[5] || '';
+
+        if (roll && roll !== 'ROLL' && roll.length >= 4) {
+          parsed.push({
+            roll: roll,
+            name: name || 'Candidate',
+            school: c[3] || 'School',
+            block: c[4] || 'APD-I',
+            guardian: c[7] || '-',
+            class: c[8] || 'V',
+            phone: c[9] || '-',
+            medium: c[10] || 'BENGALI',
+            venue: c[11] || 'ALIPURDUAR HIGH SCHOOL (HS)',
+            venueCode: c[12] || '01'
+          });
+        }
+      });
+
+      if (parsed.length > 0) {
+        saveDatabase(parsed);
+        const indicator = document.getElementById("syncIndicator");
+        if (indicator) {
+          indicator.innerHTML = `<span class="text-emerald-600 font-semibold flex items-center gap-1"><i data-lucide="check" class="w-3 h-3"></i> Live Synced (${parsed.length})</span>`;
+          if (window.lucide) lucide.createIcons();
+        }
+        return true;
+      }
+      return false;
+    }
+
+    window.googleRosterCallback = function(data) {
+      parseGVizRoster(data);
+    };
+
+    function autoLoadRoster(isManual = false) {
+      const indicator = document.getElementById("syncIndicator");
+      if (indicator) {
+        indicator.classList.remove("hidden");
+        indicator.innerHTML = `<i data-lucide="refresh-cw" class="w-3 h-3 animate-spin"></i> Auto-syncing...`;
+        if (window.lucide) lucide.createIcons();
+      }
+
+      const existingScript = document.getElementById("gviz_admit_jsonp");
+      if (existingScript) existingScript.remove();
+
+      const script = document.createElement("script");
+      script.id = "gviz_admit_jsonp";
+      script.src = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=responseHandler:googleRosterCallback&gid=${SHEET_GID}&t=${Date.now()}`;
+
+      const timer = setTimeout(() => {
+        const cached = getDatabase().length;
+        if (indicator && cached > 0) {
+          indicator.innerHTML = `<span class="text-slate-500 flex items-center gap-1"><i data-lucide="database" class="w-3 h-3"></i> Ready (${cached})</span>`;
+          if (window.lucide) lucide.createIcons();
+        }
+      }, 2500);
+
+      script.onload = () => clearTimeout(timer);
+      script.onerror = () => {
+        clearTimeout(timer);
+        const cached = getDatabase().length;
+        if (indicator) {
+          indicator.innerHTML = `<span class="text-slate-500 flex items-center gap-1"><i data-lucide="database" class="w-3 h-3"></i> Ready (${cached})</span>`;
+          if (window.lucide) lucide.createIcons();
+        }
+      };
+
+      document.body.appendChild(script);
+    }
+
+    function handleLiveSearch(query) {
+      const dropdown = document.getElementById("autocompleteDropdown");
+      const clearBtn = document.getElementById("clearBtn");
+      const trimmed = query.trim().toLowerCase().replace(/\s+/g, ' ');
+
+      if (!trimmed) {
+        dropdown.classList.add("hidden");
+        clearBtn.classList.add("hidden");
+        return;
+      }
+
+      clearBtn.classList.remove("hidden");
+      const db = getDatabase();
+
+      const matches = db.filter(item => {
+        const n = (item.name || '').toLowerCase();
+        const r = (item.roll || '').toLowerCase();
+        const g = (item.guardian || '').toLowerCase();
+        const s = (item.school || '').toLowerCase();
+        return n.includes(trimmed) || r.includes(trimmed) || g.includes(trimmed) || s.includes(trimmed);
+      });
+
+      if (matches.length === 0) {
+        dropdown.innerHTML = `
+          <div class="p-4 text-center text-sm text-slate-500">
+            No enrolled candidate found matching "<strong>${query}</strong>".<br>
+            <span class="text-xs text-slate-400">Try searching with your 7-digit roll number or student first name.</span>
+          </div>
+        `;
+        dropdown.classList.remove("hidden");
+        return;
+      }
+
+      dropdown.innerHTML = matches.slice(0, 10).map(item => `
+        <div 
+          onclick="selectStudentByRoll('${item.roll}')" 
+          class="p-3 hover:bg-blue-50 cursor-pointer flex items-center justify-between transition gap-2"
+        >
+          <div>
+            <div class="text-sm font-bold text-slate-900">${item.name}</div>
+            <div class="text-xs text-slate-500">${item.school} • Class ${item.class} (Medium: ${item.medium})</div>
+            <div class="text-[11px] text-slate-400">Guardian: ${item.guardian}</div>
+          </div>
+          <div class="text-right flex-shrink-0">
+            <span class="inline-block font-mono font-bold text-xs bg-slate-100 text-pbvm-blue px-2 py-0.5 rounded border">
+              ${item.roll}
+            </span>
+          </div>
+        </div>
+      `).join('');
+
+      dropdown.classList.remove("hidden");
+    }
+
+    function selectStudentByRoll(roll) {
+      const db = getDatabase();
+      const student = db.find(s => String(s.roll).trim() === String(roll).trim());
+      if (!student) return;
+
+      document.getElementById("searchInput").value = student.name + " (" + student.roll + ")";
+      document.getElementById("autocompleteDropdown").classList.add("hidden");
+
+      document.getElementById("cardRoll").textContent = student.roll;
+      document.getElementById("cardName").textContent = student.name;
+      document.getElementById("cardGuardian").textContent = student.guardian;
+      document.getElementById("cardSchool").textContent = student.school;
+      document.getElementById("cardClass").textContent = "Class " + student.class;
+      document.getElementById("cardMedium").textContent = student.medium;
+      document.getElementById("cardVenue").innerHTML = `<i data-lucide="map-pin" class="w-3.5 h-3.5 flex-shrink-0 text-red-500"></i><span>${student.venue}</span>`;
+      document.getElementById("cardCodeBlock").textContent = `Venue ${student.venueCode} • ${student.block}`;
+      
+      const phone = student.phone || "Not Registered";
+      document.getElementById("cardContact").textContent = phone;
+
+      const qrContainer = document.getElementById("qrcode");
+      qrContainer.innerHTML = "";
+      const qrData = `PBVM-AVIKSHA-2026|ROLL:${student.roll}|NAME:${student.name}|VENUE:${student.venue}|DATE:11-10-2026`;
+      new QRCode(qrContainer, {
+        text: qrData,
+        width: 68,
+        height: 68,
+        colorDark: "#002b7f",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.M
+      });
+
+      if (window.lucide) lucide.createIcons();
+
+      const card = document.getElementById("admitCardSection");
+      card.classList.remove("hidden");
+      card.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function clearSearch() {
+      document.getElementById("searchInput").value = "";
+      document.getElementById("autocompleteDropdown").classList.add("hidden");
+      document.getElementById("clearBtn").classList.add("hidden");
+      document.getElementById("admitCardSection").classList.add("hidden");
+      document.getElementById("searchInput").focus();
+    }
+
+    const targetDate = new Date("2026-10-11T11:00:00+05:30").getTime();
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        document.getElementById("countdownTimer").innerHTML = "EXAM IN PROGRESS";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("cdDays").textContent = String(days).padStart(2, '0') + "d";
+      document.getElementById("cdHours").textContent = String(hours).padStart(2, '0') + "h";
+      document.getElementById("cdMins").textContent = String(mins).padStart(2, '0') + "m";
+      document.getElementById("cdSecs").textContent = String(secs).padStart(2, '0') + "s";
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const existing = getDatabase();
+      const countEl = document.getElementById("totalCountDisplay");
+      if (existing.length > 0 && countEl) {
+        countEl.textContent = existing.length.toLocaleString() + " Enrolled Candidates";
+      }
+      if (window.lucide) lucide.createIcons();
+      autoLoadRoster();
+    });
+  </script>
+</body>
+</html>

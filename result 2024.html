@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vigyan Aviksha 2024 | Detailed Result Sheet & Report Card - PBVM Alipurduar</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pbvm: {
+              blue: '#002b7f',
+              darkblue: '#001a4e',
+              red: '#e11d48',
+              gold: '#d97706',
+              surface: '#f8fafc'
+            }
+          },
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            bengali: ['Noto Serif Bengali', 'serif'],
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 8mm 10mm;
+      }
+      html, body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      #marksheetSection {
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+      }
+      .marksheet-container {
+        border: 2px solid #002b7f !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-height: 275mm !important;
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+      }
+      .marksheet-watermark {
+        opacity: 0.05 !important;
+      }
+    }
+    .marksheet-watermark {
+      background-image: url('pvbm logo_3.jpeg'), url('pvbm logo.jpeg'), url('pvbm logo_2.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 240px;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen flex flex-col antialiased">
+
+  <!-- Header with Navigation to index.html, admit.html & result 2025.html -->
+  <header class="no-print bg-gradient-to-r from-pbvm-darkblue via-pbvm-blue to-[#084298] text-white shadow-xl border-b-4 border-amber-400 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 py-3 sm:py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4 text-center md:text-left">
+        <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full p-1 shadow-lg ring-4 ring-amber-400 flex-shrink-0 flex items-center justify-center overflow-hidden">
+          <img 
+            src="pvbm logo_3.jpeg" 
+            onerror="this.onerror=null; this.src='pvbm logo.jpeg'; this.onerror=function(){this.src='pvbm logo_2.jpeg';};" 
+            alt="Paschim Banga Vigyan Mancha Alipurduar Logo" 
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <div>
+          <div class="font-bengali text-amber-300 text-base sm:text-lg font-bold tracking-wide">
+            পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ — আলিপুরদুয়ার জেলা কমিটি
+          </div>
+          <h1 class="font-cinzel text-lg sm:text-2xl font-extrabold tracking-tight uppercase text-white drop-shadow">
+            Paschim Banga Vigyan Mancha
+          </h1>
+          <p class="text-xs font-semibold tracking-wider text-blue-200">
+            Vigyan Aviksha 2024 • Official Candidate Report Card Archive
+          </p>
+        </div>
+      </div>
+      
+      <!-- Interconnected Action Links with Direct Home Button -->
+      <div class="flex flex-wrap items-center justify-center md:justify-end gap-2.5">
+        <a href="index.html" class="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs uppercase tracking-wider shadow-lg transition">
+          <i data-lucide="home" class="w-4 h-4"></i> Back to Home Page
+        </a>
+        <a href="admit.html" class="inline-flex items-center gap-1.5 text-xs bg-white/15 hover:bg-white/25 border border-white/25 text-white font-bold px-3.5 py-2 rounded-xl transition">
+          <i data-lucide="ticket" class="w-3.5 h-3.5 text-amber-300"></i> Admit 2026
+        </a>
+        <a href="result 2025.html" class="inline-flex items-center gap-1.5 text-xs bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3.5 py-2 rounded-xl shadow-lg transition">
+          <i data-lucide="award" class="w-3.5 h-3.5"></i> Results 2025
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-8 flex flex-col gap-8">
+
+    <!-- Search Section -->
+    <div class="no-print bg-white rounded-2xl shadow-xl border border-slate-200 p-6 sm:p-8 max-w-3xl mx-auto w-full">
+      <div class="text-center max-w-xl mx-auto mb-6">
+        <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3.5 bg-white rounded-full p-1 shadow-md ring-2 ring-amber-400 flex items-center justify-center overflow-hidden">
+          <img 
+            src="pvbm logo_3.jpeg" 
+            onerror="this.onerror=null; this.src='pvbm logo.jpeg'; this.onerror=function(){this.src='pvbm logo_2.jpeg';};" 
+            alt="PBVM Emblem" 
+            class="w-full h-full object-contain"
+          />
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 font-cinzel">Search 2024 Examination Report Card</h2>
+        <p class="text-sm text-slate-600 mt-1 font-bengali">
+          পরীক্ষার্থীর <strong>নাম (NAME OF STUDENTS)</strong>, <strong>রোল নম্বর</strong> বা <strong>বিদ্যালয়ের নাম (NAME OF SCHOOL)</strong> লিখে খুঁজুন।
+        </p>
+      </div>
+
+      <div class="relative max-w-xl mx-auto">
+        <div class="relative flex items-center">
+          <i data-lucide="user-search" class="w-5 h-5 text-slate-400 absolute left-4 pointer-events-none"></i>
+          <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Type Student Full Name or Roll Number..." 
+            class="w-full pl-11 pr-24 py-3.5 bg-slate-50 border-2 border-slate-300 focus:border-pbvm-blue focus:bg-white rounded-xl text-slate-900 text-sm sm:text-base outline-none transition-all shadow-inner"
+            autocomplete="off"
+            oninput="handleLiveSearch(this.value)"
+          />
+          <button 
+            type="button" 
+            onclick="clearSearch()"
+            id="clearBtn"
+            class="hidden absolute right-3 px-2 py-1 text-xs font-semibold text-slate-400 hover:text-slate-600"
+          >
+            Clear
+          </button>
+        </div>
+
+        <div id="autocompleteDropdown" class="hidden absolute top-full left-0 right-0 mt-2 bg-white rounded-xl shadow-2xl border border-slate-200 overflow-hidden z-30 max-h-80 overflow-y-auto divide-y divide-slate-100"></div>
+      </div>
+
+      <!-- Live Sync & Cross Links Bar with Home Button -->
+      <div class="mt-6 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">
+        <span class="flex items-center gap-1.5">
+          <i data-lucide="database" class="w-3.5 h-3.5 text-pbvm-blue"></i>
+          2024 Database: <strong id="totalCountDisplay" class="text-slate-800">Checking cache...</strong>
+        </span>
+        
+        <div class="flex items-center gap-3">
+          <a href="index.html" class="text-slate-700 hover:text-pbvm-blue font-bold flex items-center gap-1 transition">
+            <i data-lucide="home" class="w-3.5 h-3.5"></i> Home
+          </a>
+          <span class="text-slate-300">|</span>
+          <a href="admit.html" class="text-amber-700 hover:underline font-bold flex items-center gap-1 transition">
+            <i data-lucide="ticket" class="w-3.5 h-3.5"></i> Admit Card 2026
+          </a>
+          <span class="text-slate-300">|</span>
+          <span id="syncIndicator" class="inline-flex items-center gap-1 text-slate-400">
+            <i data-lucide="refresh-cw" class="w-3 h-3 animate-spin"></i> Fast-syncing...
+          </span>
+          <button type="button" onclick="autoLoadResults(true)" class="text-pbvm-blue hover:underline font-semibold flex items-center gap-1 transition">
+            Refresh
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Candidate Detailed Report Card (1-Page A4) -->
+    <div id="marksheetSection" class="hidden max-w-3xl mx-auto w-full">
+      <div class="marksheet-container bg-white rounded-xl shadow-2xl border-2 border-pbvm-blue overflow-hidden relative text-slate-900">
+        
+        <div class="absolute inset-0 marksheet-watermark opacity-[0.04] pointer-events-none z-0"></div>
+
+        <div class="bg-gradient-to-r from-pbvm-darkblue to-pbvm-blue text-white px-5 py-3 border-b-2 border-amber-400 flex items-center justify-between gap-3 relative z-10">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-white rounded-full p-0.5 shadow flex-shrink-0 flex items-center justify-center">
+              <img 
+                src="pvbm logo_3.jpeg" 
+                onerror="this.onerror=null; this.src='pvbm logo.jpeg'; this.onerror=function(){this.src='pvbm logo_2.jpeg';};" 
+                alt="Emblem" 
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <div>
+              <div class="font-bengali text-amber-300 text-xs sm:text-sm font-semibold leading-tight">পশ্চিমবঙ্গ বিজ্ঞান মঞ্চ — আলিপুরদুয়ার জেলা কমিটি</div>
+              <h3 class="font-cinzel text-sm sm:text-base font-bold tracking-wide leading-tight">PASCHIM BANGA VIGYAN MANCHA</h3>
+              <p class="text-[10px] text-blue-200 tracking-wider">VIGYAN AVIKSHA 2024 • OFFICIAL CANDIDATE REPORT CARD</p>
+            </div>
+          </div>
+          <div class="text-right flex-shrink-0">
+            <span class="px-2 py-0.5 bg-amber-400 text-slate-950 font-bold text-[10px] uppercase rounded tracking-wider shadow">
+              YEAR 2024
+            </span>
+            <div class="text-[9px] text-blue-200 mt-0.5 font-mono">CERTIFIED REPORT</div>
+          </div>
+        </div>
+
+        <div class="p-4 sm:p-5 relative z-10 space-y-3">
+          
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 p-3 bg-slate-50 border border-slate-200 rounded-lg text-xs">
+            <div>
+              <span class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider block">ROLL</span>
+              <span class="font-mono font-extrabold text-pbvm-blue text-sm" id="resRoll">-</span>
+            </div>
+            <div class="col-span-1 sm:col-span-2">
+              <span class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider block">NAME OF STUDENTS</span>
+              <span class="font-bold text-slate-900 text-sm leading-snug block truncate" id="resName">-</span>
+            </div>
+            <div>
+              <span class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider block">CLASS</span>
+              <span class="font-bold text-slate-900" id="resClass">-</span>
+            </div>
+            <div class="col-span-2">
+              <span class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider block">FATHER'S / GUARDIANS NAME</span>
+              <span class="font-bold text-slate-900 block truncate" id="resGuardian">-</span>
+            </div>
+            <div class="col-span-2">
+              <span class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider block">MEDIUM</span>
+              <span class="font-bold text-slate-900 uppercase" id="resMedium">-</span>
+            </div>
+            <div class="col-span-2 sm:col-span-4">
+              <span class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider block">NAME OF SCHOOL</span>
+              <span class="font-bold text-pbvm-blue leading-snug block" id="resSchool">-</span>
+            </div>
+          </div>
+
+          <!-- Dynamic Subject Marks Table based on Class -->
+          <div class="border border-slate-200 rounded-lg overflow-hidden">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead>
+                <tr class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold uppercase text-[10px]">
+                  <th class="p-2 border-r border-slate-200">Evaluation Component / Subject</th>
+                  <th class="p-2 text-center border-r border-slate-200 w-24">Full Marks</th>
+                  <th class="p-2 text-center w-28">Marks Obtained</th>
+                </tr>
+              </thead>
+              <tbody id="marksTableBody" class="divide-y divide-slate-200 font-mono">
+                <!-- Dynamically populated based on Class IV-VIII vs Class IX-X -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Academic Standing Cards -->
+          <div class="grid grid-cols-3 gap-2.5 text-center">
+            <div class="border border-slate-200 rounded-lg p-2 bg-slate-50">
+              <span class="text-[9px] uppercase font-bold text-slate-400 block">TOTAL SCORE</span>
+              <div class="text-base font-extrabold text-pbvm-blue font-mono mt-0.5" id="resCardTotal">-</div>
+            </div>
+            <div class="border border-slate-200 rounded-lg p-2 bg-slate-50">
+              <span class="text-[9px] uppercase font-bold text-slate-400 block">DISTRICT RANK</span>
+              <div class="text-base font-extrabold text-slate-900 font-mono mt-0.5" id="resRank">-</div>
+            </div>
+            <div class="border border-slate-200 rounded-lg p-2 bg-slate-50">
+              <span class="text-[9px] uppercase font-bold text-slate-400 block">PERCENTILE</span>
+              <div class="text-base font-extrabold text-emerald-700 font-mono mt-0.5" id="resPercentile">-</div>
+            </div>
+          </div>
+
+          <div class="pt-2 border-t border-slate-200 flex items-center justify-between gap-3 text-[10px] text-slate-600">
+            <div class="space-y-0.5 leading-tight max-w-[75%]">
+              <div class="font-bold text-slate-800 text-[11px]">Notice Regarding Evaluation:</div>
+              <ul class="list-disc list-inside space-y-0.5 text-slate-600">
+                <li>This report card is officially certified by Paschim Banga Vigyan Mancha, Alipurduar.</li>
+                <li>Class IV–VIII: GK (Col N: 20), Science (Col O: 50), Math (Col P: 30) — Total: 100.</li>
+                <li>Class IX & X: GK (Col N: 20), Life Science (Col O: 25), Physical Science (Col P: 25), Math (Col Q: 30) — Total: 100.</li>
+              </ul>
+            </div>
+            <div class="flex flex-col items-center flex-shrink-0">
+              <div id="resQr" class="p-1 bg-white border border-slate-300 rounded shadow-sm"></div>
+              <span class="text-[8px] text-slate-400 font-mono mt-0.5">Verification QR</span>
+            </div>
+          </div>
+
+          <div class="pt-2.5 border-t border-dashed border-slate-300 flex items-end justify-between text-center text-[10px]">
+            <div class="w-36 flex flex-col items-center">
+              <div class="h-10 flex items-end justify-center">
+                <img 
+                  src="sanjay dhar.png" 
+                  onerror="this.style.display='none'"
+                  alt="Signature of Sanjay Dhar" 
+                  class="max-h-9 max-w-[120px] object-contain"
+                />
+              </div>
+              <div class="w-full border-t border-slate-500 pt-0.5 font-bold text-slate-800 text-[10px]">
+                Sanjay Dhar
+              </div>
+              <div class="text-[9px] font-semibold text-slate-700">District Secretary</div>
+              <div class="text-[8px] text-slate-500">PBVM Alipurduar</div>
+            </div>
+
+            <div class="w-36 flex flex-col items-center">
+              <div class="h-10 flex items-end justify-center">
+                <img 
+                  src="prasun.png" 
+                  onerror="this.style.display='none'"
+                  alt="Signature of Prasun Gangopadhyay" 
+                  class="max-h-9 max-w-[120px] object-contain"
+                />
+              </div>
+              <div class="w-full border-t border-slate-500 pt-0.5 font-bold text-slate-800 text-[10px]">
+                Prasun Gangopadhyay
+              </div>
+              <div class="text-[9px] font-semibold text-slate-700">Convenor</div>
+              <div class="text-[8px] text-slate-500">Vigyan Aviksha 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Bar with Inter-Links -->
+        <div class="no-print bg-slate-50 px-5 py-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-2">
+            <button onclick="clearSearch()" class="px-3 py-1.5 text-xs font-semibold text-slate-600 hover:text-slate-900 transition">
+              ← Search Another Student
+            </button>
+            <a href="index.html" class="px-3 py-1.5 text-xs font-semibold text-pbvm-blue hover:underline flex items-center gap-1">
+              <i data-lucide="home" class="w-3.5 h-3.5"></i> Return Home
+            </a>
+          </div>
+          <button onclick="window.print()" class="px-5 py-2 bg-pbvm-blue hover:bg-pbvm-darkblue text-white rounded-lg font-bold text-xs shadow transition flex items-center gap-2">
+            <i data-lucide="printer" class="w-4 h-4"></i> Print 1-Page Report Card
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer with Inter-Links -->
+  <footer class="no-print bg-slate-900 text-slate-400 border-t border-slate-800 py-6 px-4 text-xs text-center mt-auto">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-full bg-white p-0.5 flex-shrink-0">
+          <img src="pvbm logo_3.jpeg" onerror="this.onerror=null; this.src='pvbm logo.jpeg';" alt="Logo" class="w-full h-full object-contain" />
+        </div>
+        <span>© 2024–2026 Paschim Banga Vigyan Mancha, Alipurduar District Committee.</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="text-amber-400 hover:underline">Home</a>
+        <span>•</span>
+        <a href="admit.html" class="text-blue-400 hover:underline">Admit Card 2026</a>
+        <span>•</span>
+        <a href="result 2025.html" class="text-emerald-400 hover:underline">2025 Results</a>
+        <span>•</span>
+        <a href="result 2024.html" class="text-white font-bold underline">2024 Results</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Configured for your 2024 Google Sheet:
+    const SHEET_2024_ID = '1R3yUg4EgSWbgphKEQfdrvajdoZKb3yO8ZqLPSOgViB4';
+    const SHEET_2024_GID = '0';
+
+    function isSchoolLikeName(str) {
+      if (!str) return false;
+      const s = String(str).toUpperCase();
+      const schoolTerms = ['SCHOOL', 'HIGH SCHOOL', 'H.S', '(H.S)', 'PRIMARY', 'ACADEMY', 'SIKSHA', 'SHIKSHA', 'VIDYALAYA', 'MANDIR', 'INSTITUT', 'MADHYAMIK', 'MISSION', 'BALIKA'];
+      return schoolTerms.some(term => s.includes(term));
+    }
+
+    function extractVal(cell) {
+      if (!cell || cell === null || cell === undefined) return '';
+      if (cell.f !== undefined && cell.f !== null && String(cell.f).trim() !== '') {
+        return String(cell.f).trim();
+      }
+      if (cell.v !== undefined && cell.v !== null) {
+        return String(cell.v).trim();
+      }
+      return '';
+    }
+
+    function cleanNum(val) {
+      if (val === null || val === undefined) return NaN;
+      const str = String(val).replace(/[^0-9.-]/g, '').trim();
+      return str === '' ? NaN : Number(str);
+    }
+
+    function getResultsDatabase() {
+      const stored = localStorage.getItem("pbvm_results_2024");
+      if (stored) {
+        try {
+          const parsed = JSON.parse(stored);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        } catch (e) {}
+      }
+      return [];
+    }
+
+    function saveResultsDatabase(data) {
+      try {
+        localStorage.setItem("pbvm_results_2024", JSON.stringify(data));
+      } catch (e) {}
+      const countEl = document.getElementById("totalCountDisplay");
+      if (countEl) countEl.textContent = data.length.toLocaleString() + " Records Active";
+    }
+
+    function parseGVizData(data) {
+      if (!data || !data.table || !data.table.rows) return false;
+      const rows = data.table.rows;
+      const parsedResults = [];
+
+      let headerRowIndex = -1;
+      let rollCol = 2;        // Col C (Index 2)
+      let schoolCol = 3;      // Col D (Index 3)
+      let nameCol = 5;        // Col F (Index 5)
+      let guardCol = 7;       // Col H (Index 7)
+      let classCol = 8;       // Col I (Index 8)
+      let mediumCol = 10;     // Col K (Index 10)
+      let rankCol = 17;       // Col R (Index 17)
+      let percentileCol = 18; // Col S (Index 18)
+
+      // Column mapping:
+      // Col N = Index 13 -> General Knowledge (all classes)
+      // Col O = Index 14 -> Science (Class IV-VIII) / Life Science (Class IX-X)
+      // Col P = Index 15 -> Math (Class IV-VIII) / Physical Science (Class IX-X)
+      // Col Q = Index 16 -> Math (Class IX-X only)
+      const colN = 13;
+      const colO = 14;
+      const colP = 15;
+      const colQ = 16;
+
+      for (let i = 0; i < Math.min(rows.length, 6); i++) {
+        if (!rows[i] || !rows[i].c) continue;
+        const texts = rows[i].c.map(cell => extractVal(cell).toUpperCase());
+
+        if (texts.some(t => t.includes('STUDENT') || t.includes('SCHOOL') || t.includes('ROLL'))) {
+          headerRowIndex = i;
+          texts.forEach((text, colIdx) => {
+            if (/^ROLL(\s*(NO|NUMBER))?$/i.test(text) || (text.includes('ROLL') && !text.includes('ENROLL'))) {
+              rollCol = colIdx;
+            } else if (text.includes('SCHOOL') || text.includes('VIDYALAYA') || text.includes('INSTITUT')) {
+              schoolCol = colIdx;
+            } else if (text.includes('STUDENT') || text === 'CANDIDATE NAME' || (text.includes('NAME') && !text.includes('SCHOOL') && !text.includes('FATHER'))) {
+              nameCol = colIdx;
+            } else if (text.includes('FATHER') || text.includes('GUARDIAN')) {
+              guardCol = colIdx;
+            } else if (/^CLASS$/i.test(text) || text.includes('CLASS') || /^STD$/i.test(text)) {
+              classCol = colIdx;
+            } else if (text.includes('MEDIUM')) {
+              mediumCol = colIdx;
+            } else if (text.includes('RANK') || text.includes('MERIT')) {
+              rankCol = colIdx;
+            } else if (text.includes('PERCENTILE') || text.includes('PERCENT') || text.includes('PCT') || text.includes('%')) {
+              percentileCol = colIdx;
+            }
+          });
+          break;
+        }
+      }
+
+      for (let i = headerRowIndex + 1; i < rows.length; i++) {
+        const r = rows[i];
+        if (!r || !r.c) continue;
+
+        let name = extractVal(r.c[nameCol]);
+        let school = extractVal(r.c[schoolCol]);
+        const roll = (rollCol !== -1 && extractVal(r.c[rollCol])) ? extractVal(r.c[rollCol]) : ('2024-' + i);
+
+        if (isSchoolLikeName(name) && !isSchoolLikeName(school) && school.length > 0) {
+          const temp = name;
+          name = school;
+          school = temp;
+        }
+
+        if (name && (name.toUpperCase().includes('NAME OF') || name.toUpperCase() === 'NAME')) continue;
+
+        if (name && name.length >= 2) {
+          const rawColN = extractVal(r.c[colN]);
+          const rawColO = extractVal(r.c[colO]);
+          const rawColP = extractVal(r.c[colP]);
+          const rawColQ = extractVal(r.c[colQ]);
+
+          const numN = cleanNum(rawColN);
+          const numO = cleanNum(rawColO);
+          const numP = cleanNum(rawColP);
+          const numQ = cleanNum(rawColQ);
+
+          const rawClass = classCol !== -1 ? extractVal(r.c[classCol]) : 'V';
+          const normClass = String(rawClass).toUpperCase().replace(/CLASS/g, '').trim();
+          const isClass9or10 = normClass === 'IX' || normClass === 'X' || normClass === '9' || normClass === '10';
+
+          let totalSum = 0;
+          let hasScores = false;
+
+          if (isClass9or10) {
+            // Class IX & X: N (GK: 20) + O (Life Sci: 25) + P (Physical Sci: 25) + Q (Math: 30) = 100
+            [numN, numO, numP, numQ].forEach(v => {
+              if (!isNaN(v)) {
+                totalSum += v;
+                hasScores = true;
+              }
+            });
+          } else {
+            // Class IV to VIII: N (GK: 20) + O (General Sci: 50) + P (Math: 30) = 100
+            [numN, numO, numP].forEach(v => {
+              if (!isNaN(v)) {
+                totalSum += v;
+                hasScores = true;
+              }
+            });
+          }
+
+          const rawRank = rankCol !== -1 ? extractVal(r.c[rankCol]) : '';
+          let rawPercentile = percentileCol !== -1 ? extractVal(r.c[percentileCol]) : '';
+
+          if (!rawPercentile && hasScores) {
+            rawPercentile = ((totalSum / 100) * 100).toFixed(1) + '%';
+          }
+
+          parsedResults.push({
+            id: 'res_2024_' + i,
+            roll: roll,
+            school: school || 'District School',
+            name: name,
+            guardian: guardCol !== -1 ? (extractVal(r.c[guardCol]) || '-') : '-',
+            class: rawClass || 'V',
+            medium: mediumCol !== -1 ? (extractVal(r.c[mediumCol]) || 'BENGALI') : 'BENGALI',
+            colN: !isNaN(numN) ? String(numN) : (rawColN || '-'),
+            colO: !isNaN(numO) ? String(numO) : (rawColO || '-'),
+            colP: !isNaN(numP) ? String(numP) : (rawColP || '-'),
+            colQ: !isNaN(numQ) ? String(numQ) : (rawColQ || '-'),
+            total: hasScores ? String(totalSum) : '-',
+            rank: rawRank || 'Qualified',
+            percentile: rawPercentile || '-'
+          });
+        }
+      }
+
+      if (parsedResults.length > 0) {
+        saveResultsDatabase(parsedResults);
+        const indicator = document.getElementById("syncIndicator");
+        if (indicator) {
+          indicator.innerHTML = `<span class="text-emerald-600 font-semibold flex items-center gap-1"><i data-lucide="check" class="w-3 h-3"></i> Live Synced (${parsedResults.length})</span>`;
+          if (window.lucide) lucide.createIcons();
+        }
+        return true;
+      }
+      return false;
+    }
+
+    window.googleResult2024Callback = function(data) {
+      parseGVizData(data);
+    };
+
+    async function autoLoadResults(isManual = false) {
+      const indicator = document.getElementById("syncIndicator");
+      if (indicator) {
+        indicator.classList.remove("hidden");
+        indicator.innerHTML = `<i data-lucide="refresh-cw" class="w-3 h-3 animate-spin"></i> Fast-syncing 2024...`;
+        if (window.lucide) lucide.createIcons();
+      }
+
+      const existingScript = document.getElementById("gviz_2024_script");
+      if (existingScript) existingScript.remove();
+
+      const script = document.createElement("script");
+      script.id = "gviz_2024_script";
+      script.src = `https://docs.google.com/spreadsheets/d/${SHEET_2024_ID}/gviz/tq?tqx=responseHandler:googleResult2024Callback&gid=${SHEET_2024_GID}&t=${Date.now()}`;
+
+      const timer = setTimeout(() => {
+        const cached = getResultsDatabase().length;
+        if (indicator && cached > 0) {
+          indicator.innerHTML = `<span class="text-slate-500 flex items-center gap-1"><i data-lucide="database" class="w-3 h-3"></i> Ready (${cached})</span>`;
+          if (window.lucide) lucide.createIcons();
+        }
+      }, 2500);
+
+      script.onload = () => clearTimeout(timer);
+      script.onerror = () => {
+        clearTimeout(timer);
+        const cached = getResultsDatabase().length;
+        if (indicator) {
+          indicator.innerHTML = `<span class="text-slate-500 flex items-center gap-1"><i data-lucide="database" class="w-3 h-3"></i> Ready (${cached})</span>`;
+          if (window.lucide) lucide.createIcons();
+        }
+      };
+
+      document.body.appendChild(script);
+    }
+
+    function handleLiveSearch(query) {
+      const dropdown = document.getElementById("autocompleteDropdown");
+      const clearBtn = document.getElementById("clearBtn");
+      const trimmed = query.trim().toLowerCase().replace(/\s+/g, ' ');
+
+      if (!trimmed) {
+        dropdown.classList.add("hidden");
+        clearBtn.classList.add("hidden");
+        return;
+      }
+
+      clearBtn.classList.remove("hidden");
+      const db = getResultsDatabase();
+
+      const matches = db.filter(item => {
+        const studentName = (item.name || '').toLowerCase();
+        const schoolName = (item.school || '').toLowerCase();
+        const rollNumber = (item.roll || '').toLowerCase();
+        return studentName.includes(trimmed) || rollNumber.includes(trimmed) || schoolName.includes(trimmed);
+      });
+
+      if (matches.length === 0) {
+        dropdown.innerHTML = `
+          <div class="p-4 text-center text-sm text-slate-500 font-bengali">
+            "<strong>${query}</strong>" নামের কোনো পরীক্ষার্থীর রেকর্ড পাওয়া যায়নি।<br>
+            <span class="text-xs text-slate-400">বানান সঠিক আছে কিনা দেখুন অথবা রোল নম্বর দিয়ে অনুসন্ধান করুন।</span>
+          </div>
+        `;
+        dropdown.classList.remove("hidden");
+        return;
+      }
+
+      dropdown.innerHTML = matches.slice(0, 10).map(item => `
+        <div 
+          onclick="selectStudentResult('${item.id || item.roll}')" 
+          class="p-3.5 hover:bg-blue-50 cursor-pointer flex items-center justify-between transition gap-2 font-bengali border-b last:border-0"
+        >
+          <div>
+            <div class="text-sm font-bold text-slate-900 flex items-center gap-1.5">
+              <i data-lucide="user" class="w-3.5 h-3.5 text-pbvm-blue"></i> ${item.name}
+            </div>
+            <div class="text-xs text-slate-600 mt-0.5 flex items-center gap-1">
+              <i data-lucide="school" class="w-3.5 h-3.5 text-slate-400"></i> ${item.school} • Class ${item.class}
+            </div>
+            <div class="text-[11px] text-emerald-700 font-semibold mt-0.5">TOTAL: ${item.total} | Rank: ${item.rank} | Percentile: ${item.percentile}</div>
+          </div>
+          <div class="text-right flex-shrink-0">
+            <span class="inline-block font-mono font-bold text-xs bg-slate-100 text-pbvm-blue px-2.5 py-1 rounded border">
+              ${item.roll}
+            </span>
+          </div>
+        </div>
+      `).join('');
+
+      if (window.lucide) lucide.createIcons();
+      dropdown.classList.remove("hidden");
+    }
+
+    function selectStudentResult(identifier) {
+      const db = getResultsDatabase();
+      const s = db.find(item => item.id === identifier || String(item.roll).trim() === String(identifier).trim());
+      if (!s) return;
+
+      document.getElementById("searchInput").value = s.name;
+      document.getElementById("autocompleteDropdown").classList.add("hidden");
+
+      // Bind candidate particulars
+      document.getElementById("resRoll").textContent = s.roll || '-';
+      document.getElementById("resName").textContent = s.name || '-';
+      document.getElementById("resSchool").textContent = s.school || '-';
+      document.getElementById("resGuardian").textContent = s.guardian || '-';
+      document.getElementById("resClass").textContent = "Class " + (s.class || '-');
+      document.getElementById("resMedium").textContent = s.medium || '-';
+
+      // Summary Card Scores
+      document.getElementById("resCardTotal").textContent = s.total || '-';
+      document.getElementById("resRank").textContent = s.rank || 'Qualified';
+      document.getElementById("resPercentile").textContent = s.percentile || '-';
+
+      // Class Normalization: Class IX & X vs Class IV to VIII
+      const normClass = String(s.class).toUpperCase().replace(/CLASS/g, '').trim();
+      const isClass9or10 = normClass === 'IX' || normClass === 'X' || normClass === '9' || normClass === '10';
+
+      const tableBody = document.getElementById("marksTableBody");
+      tableBody.innerHTML = "";
+
+      if (isClass9or10) {
+        // Class IX & X (Columns N to Q):
+        // Col N: General Knowledge (20)
+        // Col O: Life Science (25)
+        // Col P: Physical Science (25)
+        // Col Q: Mathematics (30)
+        tableBody.innerHTML = `
+          <tr>
+            <td class="p-2 font-sans font-medium text-slate-800 border-r border-slate-200">General Knowledge (সাধারণ জ্ঞান)</td>
+            <td class="p-2 text-center text-slate-500 border-r border-slate-200">20</td>
+            <td class="p-2 text-center font-bold text-slate-900 text-sm">${s.colN || '-'}</td>
+          </tr>
+          <tr>
+            <td class="p-2 font-sans font-medium text-slate-800 border-r border-slate-200">Life Science (জীবন বিজ্ঞান)</td>
+            <td class="p-2 text-center text-slate-500 border-r border-slate-200">25</td>
+            <td class="p-2 text-center font-bold text-slate-900 text-sm">${s.colO || '-'}</td>
+          </tr>
+          <tr>
+            <td class="p-2 font-sans font-medium text-slate-800 border-r border-slate-200">Physical Science (ভৌত বিজ্ঞান)</td>
+            <td class="p-2 text-center text-slate-500 border-r border-slate-200">25</td>
+            <td class="p-2 text-center font-bold text-slate-900 text-sm">${s.colP || '-'}</td>
+          </tr>
+          <tr>
+            <td class="p-2 font-sans font-medium text-slate-800 border-r border-slate-200">Mathematics (গণিত)</td>
+            <td class="p-2 text-center text-slate-500 border-r border-slate-200">30</td>
+            <td class="p-2 text-center font-bold text-slate-900 text-sm">${s.colQ || '-'}</td>
+          </tr>
+          <tr class="bg-blue-50/70 font-sans font-bold text-pbvm-blue border-t-2 border-pbvm-blue/40">
+            <td class="p-2.5 uppercase tracking-wide border-r border-slate-200">TOTAL MARKS OBTAINED</td>
+            <td class="p-2.5 text-center border-r border-slate-200 font-mono">100</td>
+            <td class="p-2.5 text-center font-mono text-base text-pbvm-blue font-extrabold">${s.total || '-'}</td>
+          </tr>
+        `;
+      } else {
+        // Class IV to VIII (Columns N to P):
+        // Col N: General Knowledge (20)
+        // Col O: General Science (50)
+        // Col P: Mathematics (30)
+        tableBody.innerHTML = `
+          <tr>
+            <td class="p-2 font-sans font-medium text-slate-800 border-r border-slate-200">General Knowledge (সাধারণ জ্ঞান)</td>
+            <td class="p-2 text-center text-slate-500 border-r border-slate-200">20</td>
+            <td class="p-2 text-center font-bold text-slate-900 text-sm">${s.colN || '-'}</td>
+          </tr>
+          <tr>
+            <td class="p-2 font-sans font-medium text-slate-800 border-r border-slate-200">General Science (বিজ্ঞান)</td>
+            <td class="p-2 text-center text-slate-500 border-r border-slate-200">50</td>
+            <td class="p-2 text-center font-bold text-slate-900 text-sm">${s.colO || '-'}</td>
+          </tr>
+          <tr>
+            <td class="p-2 font-sans font-medium text-slate-800 border-r border-slate-200">Mathematics (গণিত)</td>
+            <td class="p-2 text-center text-slate-500 border-r border-slate-200">30</td>
+            <td class="p-2 text-center font-bold text-slate-900 text-sm">${s.colP || '-'}</td>
+          </tr>
+          <tr class="bg-blue-50/70 font-sans font-bold text-pbvm-blue border-t-2 border-pbvm-blue/40">
+            <td class="p-2.5 uppercase tracking-wide border-r border-slate-200">TOTAL MARKS OBTAINED</td>
+            <td class="p-2.5 text-center border-r border-slate-200 font-mono">100</td>
+            <td class="p-2.5 text-center font-mono text-base text-pbvm-blue font-extrabold">${s.total || '-'}</td>
+          </tr>
+        `;
+      }
+
+      // Generate Verification QR
+      const qrContainer = document.getElementById("resQr");
+      qrContainer.innerHTML = "";
+      const qrData = `PBVM-2024|ROLL:${s.roll}|STUDENT:${s.name}|SCHOOL:${s.school}|TOTAL:${s.total}|RANK:${s.rank}|PCT:${s.percentile}`;
+      new QRCode(qrContainer, {
+        text: qrData,
+        width: 68,
+        height: 68,
+        colorDark: "#002b7f",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.M
+      });
+
+      if (window.lucide) lucide.createIcons();
+
+      const card = document.getElementById("marksheetSection");
+      card.classList.remove("hidden");
+      card.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function clearSearch() {
+      document.getElementById("searchInput").value = "";
+      document.getElementById("autocompleteDropdown").classList.add("hidden");
+      document.getElementById("clearBtn").classList.add("hidden");
+      document.getElementById("marksheetSection").classList.add("hidden");
+      document.getElementById("searchInput").focus();
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const cached = getResultsDatabase();
+      const countEl = document.getElementById("totalCountDisplay");
+      if (countEl && cached.length > 0) {
+        countEl.textContent = cached.length.toLocaleString() + " Records Ready";
+      }
+      if (window.lucide) lucide.createIcons();
+      autoLoadResults();
+    });
+  </script>
+</body>
+</html>
